@@ -6,8 +6,8 @@
 
 <p align="center">
   <a href="https://github.com/mikeTran99/Auto-Link/releases/latest/download/Auto-Link-win.exe"><img alt="Tải về cho Windows" src="https://img.shields.io/badge/T%E1%BA%A3i%20v%E1%BB%81-Windows%2010%2F11-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a>&nbsp;
-  <a href="https://github.com/mikeTran99/Auto-Link/releases/latest"><img alt="Phiên bản" src="https://img.shields.io/github/v/release/mikeTran99/Auto-Link?style=for-the-badge&label=phi%C3%AAn%20b%E1%BA%A3n&color=22C55E&logo=github"></a>&nbsp;
-  <a href="https://github.com/mikeTran99/Auto-Link/releases"><img alt="Lượt tải" src="https://img.shields.io/github/downloads/mikeTran99/Auto-Link/total?style=for-the-badge&label=l%C6%B0%E1%BB%A3t%20t%E1%BA%A3i&color=F97316&logo=icloud&logoColor=white"></a>
+  <a href="https://github.com/mikeTran99/Auto-Link/releases/latest"><img alt="Phiên bản" src="https://img.shields.io/github/v/release/mikeTran99/Auto-Link?cacheSeconds=1800&style=for-the-badge&label=phi%C3%AAn%20b%E1%BA%A3n&color=22C55E&logo=github"></a>&nbsp;
+  <a href="https://github.com/mikeTran99/Auto-Link/releases"><img alt="Lượt tải" src="https://img.shields.io/github/downloads/mikeTran99/Auto-Link/total?cacheSeconds=1800&style=for-the-badge&label=l%C6%B0%E1%BB%A3t%20t%E1%BA%A3i&color=F97316&logo=icloud&logoColor=white"></a>
 </p>
 <p align="center">
   <img alt="OCR tiếng Việt" src="https://img.shields.io/badge/OCR-ti%E1%BA%BFng%20Vi%E1%BB%87t-F59E0B?style=flat-square&logo=googletranslate&logoColor=white">

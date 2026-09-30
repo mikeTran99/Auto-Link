@@ -6,8 +6,8 @@
 
 <p align="center">
   <a href="https://github.com/mikeTran99/Auto-Link/releases/latest/download/Auto-Link-win.exe"><img alt="Download for Windows" src="https://img.shields.io/badge/Download-Windows%2010%2F11-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a>&nbsp;
-  <a href="https://github.com/mikeTran99/Auto-Link/releases/latest"><img alt="Version" src="https://img.shields.io/github/v/release/mikeTran99/Auto-Link?style=for-the-badge&label=version&color=22C55E&logo=github"></a>&nbsp;
-  <a href="https://github.com/mikeTran99/Auto-Link/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/mikeTran99/Auto-Link/total?style=for-the-badge&label=downloads&color=F97316&logo=icloud&logoColor=white"></a>
+  <a href="https://github.com/mikeTran99/Auto-Link/releases/latest"><img alt="Version" src="https://img.shields.io/github/v/release/mikeTran99/Auto-Link?cacheSeconds=1800&style=for-the-badge&label=version&color=22C55E&logo=github"></a>&nbsp;
+  <a href="https://github.com/mikeTran99/Auto-Link/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/mikeTran99/Auto-Link/total?cacheSeconds=1800&style=for-the-badge&label=downloads&color=F97316&logo=icloud&logoColor=white"></a>
 </p>
 <p align="center">
   <img alt="Vietnamese OCR" src="https://img.shields.io/badge/OCR-Vietnamese-F59E0B?style=flat-square&logo=googletranslate&logoColor=white">
