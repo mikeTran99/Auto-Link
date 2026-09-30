@@ -1,0 +1,34 @@
+AUTO LINK — THÔNG BÁO THÀNH PHẦN MÃ NGUỒN MỞ ĐI KÈM (THIRD-PARTY NOTICES)
+==========================================================================
+Bản Auto_Link.exe đóng gói sẵn các thành phần dưới đây. Mỗi thành phần thuộc bản quyền của tác giả tương ứng
+và được phân phối lại theo đúng giấy phép của nó. Toàn văn giấy phép: xem trang chủ từng dự án
+(giấy phép Tesseract đi kèm trong gói OCR: licenses/LICENSE).
+
+Thành phần                 Phiên bản        Giấy phép                  Trang chủ
+-------------------------  ---------------  -------------------------  ----------------------------------------------
+Python (CPython runtime)   3.14             PSF License                https://www.python.org
+Tcl/Tk (giao diện)         8.6              Tcl/Tk License (BSD-style) https://www.tcl-lang.org
+Tesseract OCR              5.4.0            Apache License 2.0         https://github.com/tesseract-ocr/tesseract
+  bản dựng Windows         UB Mannheim      Apache License 2.0         https://github.com/UB-Mannheim/tesseract
+Leptonica (kèm Tesseract)  1.84.1           BSD 2-Clause               http://www.leptonica.org
+Dữ liệu tessdata_best vie  —                Apache License 2.0         https://github.com/tesseract-ocr/tessdata_best
+Dữ liệu tessdata eng, osd  —                Apache License 2.0         https://github.com/tesseract-ocr/tessdata
+  (và các thư viện nén/ảnh kèm Tesseract: libpng, libjpeg-turbo, libtiff, libwebp, openjpeg, giflib, zlib, zstd,
+   lz4, xz/liblzma, bzip2, libarchive, libdeflate, libiconv, expat, OpenSSL libcrypto (Apache 2.0),
+   libgcc/libstdc++/winpthreads (GPL có ngoại lệ runtime GCC) — giấy phép tự do cho phép phân phối lại)
+PDFium (qua pypdfium2)     —                BSD 3-Clause / Apache 2.0  https://pdfium.googlesource.com/pdfium
+pypdfium2                  5.13.0           Apache 2.0 / BSD 3-Clause  https://github.com/pypdfium2-team/pypdfium2
+pypdf                      6.19.0           BSD 3-Clause               https://github.com/py-pdf/pypdf
+ReportLab                  5.0.0            BSD 3-Clause               https://www.reportlab.com
+python-docx                1.2.0            MIT                        https://github.com/python-openxml/python-docx
+lxml                       6.1.1            BSD 3-Clause               https://lxml.de
+openpyxl                   3.1.5            MIT                        https://openpyxl.readthedocs.io
+OpenCV (opencv-python)     5.0.0            Apache License 2.0         https://opencv.org
+NumPy                      2.4.6            BSD 3-Clause               https://numpy.org
+Pillow                     12.3.0           MIT-CMU (HPND)             https://python-pillow.org
+pywin32                    312              PSF License                https://github.com/mhammond/pywin32
+Microsoft Visual C++ Runtime (vcruntime140, msvcp140) — phân phối lại theo điều khoản Visual Studio Redistributable.
+PyInstaller bootloader     6.21.0           GPL 2.0 có ngoại lệ bootloader (được phép đóng gói ứng dụng bất kỳ)
+
+Font chữ (Arial, Times New Roman, Segoe) KHÔNG được đóng gói — app dùng font có sẵn của Windows trên máy chạy.
+Microsoft Word / Excel / PowerPoint KHÔNG được đóng gói — chức năng Office → PDF dùng bản Office đã cài trên máy.
