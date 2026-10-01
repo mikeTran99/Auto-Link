@@ -1,5 +1,14 @@
 # Nhật ký thay đổi — Auto Link
 
+## 7.1.1 — 01/10/2026 (bản sửa lỗi)
+- **"Mở file" ở màn hình kết quả không mở được** (`[WinError -2147221003] Application not found`): máy đặt ứng dụng
+  khác (vd WPS) mở PDF nhưng thiếu liên kết hệ thống `.pdf`. Mọi nút mở file / thư mục dùng `open_path`: chuẩn hoá
+  đường dẫn (`/` → `\`), Windows báo lỗi thì mở bằng đúng ứng dụng người dùng đã chọn (UserChoice), không có thì hộp
+  "Mở bằng…" của Windows.
+- **Thông báo "Có lỗi: RoundedButton.__init__.<locals>.<lambda>() missing 1 required positional argument: 'e'"** khi
+  màn hình kết quả hiện ra: nút cũ bị huỷ lúc hiệu ứng rê chuột còn chờ → Tcl gọi nhầm lệnh của nút mới cùng tên.
+  Sửa tận gốc cho mọi widget: tên lệnh hẹn giờ (`after`) không bao giờ trùng, widget bị huỷ thì huỷ việc chờ của nó.
+
 ## 7.1.0 — 01/10/2026
 **Mới — "Đảo tính năng"**: nút ⇄ bên phải tiêu đề mỗi chức năng chính mở chức năng chiều ngược
 - Word → Hyperlink ⇄ **Trích xuất link**: mọi link trong Word / PDF (hyperlink, cả trường HYPERLINK Word tự tạo khi
@@ -110,6 +119,8 @@ bảng 1280×800, 2K, 4K; cửa sổ thu nhỏ, Snap nửa màn hình)
 
 **Nền tảng (đề xuất 6, 12)**
 - Git + CI (GitHub/Gitea Actions chạy lint + test trên Windows), hook pre-commit.
+- Ký mã EXE tự động khi có chứng thư (`scripts/sign.ps1`, PFX hoặc chứng thư trong kho / USB token).
+- Module `vanban.py`: lõi văn bản hành chính tách khỏi giao diện.
 - Bỏ fpdf2 (LGPL) cùng fontTools, defusedxml: thư viện Python đóng gói đều dùng giấy phép BSD / MIT / Apache / PSF.
   Ảnh → PDF có link vẽ bằng ReportLab, ảnh JPEG nhúng nguyên bản (ảnh chụp 4 MB → PDF ~4 MB, trước đây 34 MB).
 - Cài đặt › Sao lưu / khôi phục: cài đặt, công thức, thư mục tự động, quy tắc thể thức, sổ lịch sử mã QR → 1 file
