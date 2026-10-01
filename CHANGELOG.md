@@ -1,5 +1,33 @@
 # Nhật ký thay đổi — Auto Link
 
+## 7.1.0 — 01/10/2026
+**Mới — "Đảo tính năng"**: nút ⇄ bên phải tiêu đề mỗi chức năng chính mở chức năng chiều ngược
+- Word → Hyperlink ⇄ **Trích xuất link**: mọi link trong Word / PDF (hyperlink, cả trường HYPERLINK Word tự tạo khi
+  dán link; link dạng chữ, cả trong bảng; mã QR trong ảnh) → Excel 2 sheet: "Tất cả link" (file, vị trí, chữ hiển thị,
+  nguồn) và "Link duy nhất" (gộp trùng, đếm số lần). Tuỳ chọn gỡ hyperlink: lưu bản Word `_khong_link`, giữ nguyên chữ.
+- Ảnh → PDF có link ⇄ **PDF → Ảnh + link**: mỗi trang PDF 1 ảnh JPG (100–300 dpi, mỗi PDF 1 thư mục) + Excel link
+  của từng trang (link bấm được và link dạng chữ).
+- Link → Mã QR ⇄ **Mã QR → Link**: đọc mọi mã QR (cả nhiều mã / trang) trong ảnh, PDF (cả bản scan), Word → Excel
+  (link / văn bản, kể cả nội dung tiếng Việt).
+- Trích / đọc được link → nút **"Tạo mã QR từ các link này"** đưa thẳng sang Link → Mã QR (giữ nhãn, bỏ link trùng).
+
+**Sắp xếp chức năng khoa học hơn**
+- Menu trái theo nhóm: XỬ LÝ (Word → Hyperlink, Ảnh → PDF có link, Link → Mã QR, Bộ công cụ) · THEO DÕI (Lịch sử mã
+  QR, Nhật ký xử lý) · HỆ THỐNG (Cài đặt).
+- Bộ công cụ (35) xếp 5 nhóm việc: Văn thư & Dịch vụ công · Link & Mã QR · Chuyển đổi & Office · Sắp xếp & chỉnh sửa
+  PDF · Bảo mật, tối ưu & lưu trữ; ô **tìm nhanh** (gõ không dấu vẫn ra, dán cũng lọc ngay).
+
+**Hiển thị đầy đủ trên mọi màn hình / thiết bị** (màn cũ 1024×768, laptop HD 100–125 %, Full HD 150–175 %, máy tính
+bảng 1280×800, 2K, 4K; cửa sổ thu nhỏ, Snap nửa màn hình)
+- Cửa sổ hẹp: menu trái thu thành cột icon (rê chuột / Tab hiện tên); cửa sổ thấp: ẩn tiêu đề nhóm, chân menu.
+- Hàng nút tự xuống dòng (Nhật ký, Lịch sử, trang Link, bảng chọn link, chân trang) thay vì bị ép, cắt chữ; dòng tuỳ
+  chọn (Cài đặt, Bước 2) đưa nút / lựa chọn xuống dưới chữ khi hẹp; đường dẫn, mô tả dài tự xuống dòng.
+- Mọi trang cuộn được khi màn thấp, bảng / ô nhật ký không bị ép dẹt; nút chính luôn ghim đáy trang.
+- Hộp thoại không cao / rộng quá màn hình (phần thân cuộn được), không lọt xuống dưới thanh tác vụ.
+- Cửa sổ nhỏ nhất 760 × 520 px logic (trước: bằng cỡ mặc định).
+- Test tự động giả lập 8 loại màn hình × 4 cỡ cửa sổ (phóng to, mặc định, nửa màn hình, nhỏ nhất); tự kiểm tra EXE thêm
+  mục "Đảo tính năng".
+
 ## 7.0.1 — 30/09/2026
 **Sửa lỗi hiển thị thiếu thành phần trên laptop 14 inch** (Full HD phóng chữ 150 %, HD 1366×768, màn 2K 200 %)
 - Menu trái rộng cố định 232 px → máy phóng chữ 150 % bị cắt "Auto Lin", "Dịch vụ công s", "Word → Hyperlin". Nay

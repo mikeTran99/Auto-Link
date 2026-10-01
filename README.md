@@ -1,6 +1,6 @@
 <h1 align="center"><img src="docs/banner.png" alt="Auto Link — Bộ công cụ PDF, Văn thư & Dịch vụ công" width="100%"></h1>
 
-<p align="center"><b>Bộ công cụ PDF, Văn thư &amp; Dịch vụ công cho bộ phận một cửa — Word → Hyperlink, Ảnh → PDF có link, Link → Mã QR, OCR tiếng Việt và 32 công cụ PDF / Office trong một ứng dụng Windows.</b></p>
+<p align="center"><b>Bộ công cụ PDF, Văn thư &amp; Dịch vụ công cho bộ phận một cửa — Word → Hyperlink, Ảnh → PDF có link, Link → Mã QR, OCR tiếng Việt, ⇄ Đảo tính năng và 35 công cụ PDF / Office trong một ứng dụng Windows.</b></p>
 
 <p align="center">🇻🇳 <b>Tiếng Việt</b> · 🇬🇧 <a href="docs/readme/README.en.md">English</a></p>
 
@@ -11,18 +11,20 @@
 </p>
 <p align="center">
   <img alt="OCR tiếng Việt" src="https://img.shields.io/badge/OCR-ti%E1%BA%BFng%20Vi%E1%BB%87t-F59E0B?style=flat-square&logo=googletranslate&logoColor=white">
-  <img alt="32 công cụ" src="https://img.shields.io/badge/32-c%C3%B4ng%20c%E1%BB%A5%20PDF%20%2F%20Office-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
+  <img alt="35 công cụ" src="https://img.shields.io/badge/35-c%C3%B4ng%20c%E1%BB%A5%20PDF%20%2F%20Office-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
   <img alt="Mã QR" src="https://img.shields.io/badge/M%C3%A3%20QR-m%E1%BB%A9c%20H-10B981?style=flat-square&logo=qrcode&logoColor=white">
   <img alt="NĐ 30" src="https://img.shields.io/badge/th%E1%BB%83%20th%E1%BB%A9c-N%C4%90%2030%2F2020-8B5CF6?style=flat-square&logo=bookstack&logoColor=white">
   <img alt="Offline" src="https://img.shields.io/badge/d%E1%BB%AF%20li%E1%BB%87u-100%25%20tr%C3%AAn%20m%C3%A1y-0EA5E9?style=flat-square&logo=shield&logoColor=white">
-  <img alt="Phóng chữ" src="https://img.shields.io/badge/m%C3%A0n%20h%C3%ACnh-100%E2%80%93200%25-64748B?style=flat-square&logo=windowsterminal&logoColor=white">
+  <img alt="Đảo tính năng" src="https://img.shields.io/badge/%E2%87%84-%C4%90%E1%BA%A3o%20t%C3%ADnh%20n%C4%83ng-D97706?style=flat-square">
+  <img alt="Mọi màn hình" src="https://img.shields.io/badge/m%E1%BB%8Di%20m%C3%A0n%20h%C3%ACnh-1024%C3%97768%20%E2%86%92%204K-64748B?style=flat-square&logo=windowsterminal&logoColor=white">
 </p>
 
 <p align="center">
   <a href="#-cài-đặt">📥 Cài đặt</a> ·
   <a href="#-tính-năng">✨ Tính năng</a> ·
   <a href="#-các-chức-năng">🧭 Các chức năng</a> ·
-  <a href="#-bộ-công-cụ--32-công-cụ">🧰 32 công cụ</a> ·
+  <a href="#-đảo-tính-năng">⇄ Đảo tính năng</a> ·
+  <a href="#-bộ-công-cụ--35-công-cụ--5-nhóm">🧰 35 công cụ</a> ·
   <a href="#-dữ-liệu--quyền-riêng-tư">🔒 Quyền riêng tư</a> ·
   <a href="#-xử-lý-sự-cố">🛟 Xử lý sự cố</a> ·
   <a href="#-nhật-ký-thay-đổi">📜 Thay đổi</a>
@@ -80,7 +82,7 @@ Mở **⚙️ Cài đặt › ✅ Kiểm tra hệ thống** → mọi mục (mã
 | | Thành phần | Yêu cầu |
 |:-:|---|---|
 | 🪟 | Hệ điều hành | Windows 10 / 11 **64-bit** |
-| 🖥️ | Màn hình | Từ **1366 × 768**, mọi mức phóng chữ **100 – 200 %** (laptop 14 inch Full HD 150 % hiển thị đầy đủ) |
+| 🖥️ | Màn hình | **Mọi cỡ**: từ 1024 × 768 tới 4K, phóng chữ **100 – 250 %**, laptop 14 inch, máy tính bảng; cửa sổ thu nhỏ / Snap nửa màn hình vẫn đủ thành phần |
 | 📎 | Microsoft Office 2013+ | Chỉ cần cho **Word / Excel / PowerPoint → PDF** và **nối file Office** |
 | 🌐 | Mạng | Không cần — chỉ dùng khi bạn bấm **Cào link**, hoặc cập nhật qua thư mục mạng nội bộ |
 
@@ -118,8 +120,8 @@ So với lần cào trước: thủ tục **mới**, **không còn**, **đổi t
 </td>
 <td valign="top">
 
-### 🧰 32 công cụ
-Hàng loạt theo công thức, trộn văn bản, **số hóa hồ sơ**, sổ **văn bản đến**, **thể thức NĐ 30**, so sánh văn bản, **PDF/A**, che thông tin cá nhân…
+### 🧰 35 công cụ · 5 nhóm
+Xếp theo việc cần làm + **ô tìm nhanh**: hàng loạt theo công thức, trộn văn bản, **số hóa hồ sơ**, sổ **văn bản đến**, **thể thức NĐ 30**, so sánh văn bản, **PDF/A**, che thông tin cá nhân…
 
 </td>
 <td valign="top">
@@ -146,6 +148,26 @@ Hoàn tác lượt vừa làm: file mới vào **Thùng rác**, file bị ghi đ
 
 ### 🔒 Riêng tư · ⌨️ Bàn phím · 🎨 4 giao diện
 Xử lý **100 % trên máy**; dùng được hoàn toàn bằng bàn phím; 4 bảng màu sáng / tối; tự co giãn theo màn hình.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### ⇄ Đảo tính năng
+Mỗi chức năng chính có nút **đảo chiều**: trích xuất link từ Word / PDF, PDF → ảnh + link, **đọc mã QR → link** hàng loạt.
+
+</td>
+<td valign="top">
+
+### 🖥️ Mọi màn hình
+Từ 1024 × 768 tới **4K**, phóng chữ 100 – 250 %: menu thu gọn khi hẹp, hàng nút tự xuống dòng, trang dài cuộn được.
+
+</td>
+<td valign="top">
+
+### 🗂️ Sắp xếp khoa học
+Menu theo nhóm **Xử lý · Theo dõi · Hệ thống**; Bộ công cụ 5 nhóm việc, tìm nhanh gõ không dấu.
 
 </td>
 </tr>
@@ -220,16 +242,51 @@ Lưu **vĩnh viễn** mọi mã đã tạo: 🔍 tìm kiếm · ☑️ tích ch�
 
 ---
 
-## 🧰 Bộ công cụ — 32 công cụ
+## ⇄ Đảo tính năng
+
+Bên phải tiêu đề mỗi chức năng chính có nút **⇄ Đảo tính năng** — mở chức năng **chiều ngược**, phục vụ việc thường gặp ở bộ phận một cửa: nhận văn bản có sẵn link / mã QR và cần lấy lại danh sách.
+
+```mermaid
+flowchart LR
+    A["📝 Word → Hyperlink"]:::blue <-->|⇄| B["🔗 Trích xuất link<br/>Word / PDF → Excel"]:::amber
+    C["🖼️ Ảnh → PDF có link"]:::violet <-->|⇄| D["🏞️ PDF → Ảnh + link"]:::amber
+    E["🔳 Link → Mã QR"]:::green <-->|⇄| F["📷 Mã QR → Link<br/>ảnh / PDF / Word"]:::amber
+    B -->|"Tạo mã QR từ các link này"| E
+    F -->|"Tạo mã QR từ các link này"| E
+    classDef blue fill:#0EA5E9,stroke:#0369A1,color:#fff
+    classDef violet fill:#8B5CF6,stroke:#6D28D9,color:#fff
+    classDef green fill:#10B981,stroke:#047857,color:#fff
+    classDef amber fill:#F59E0B,stroke:#B45309,color:#fff
+```
+
+| Chức năng chính | ⇄ Đảo tính năng | Kết quả |
+|---|---|---|
+| 📝 Word → Hyperlink | 🔗 **Trích xuất link** | Mọi link trong Word / PDF (hyperlink, link dạng chữ — cả trong bảng, mã QR trong ảnh) → Excel: **Tất cả link** (file, vị trí, chữ hiển thị, nguồn) + **Link duy nhất** (gộp trùng, đếm số lần). Tuỳ chọn **gỡ hyperlink**, giữ nguyên chữ |
+| 🖼️ Ảnh → PDF có link | 🏞️ **PDF → Ảnh + link** | Mỗi trang PDF 1 ảnh JPG (100 – 300 dpi, mỗi PDF 1 thư mục) + Excel link của từng trang |
+| 🔳 Link → Mã QR | 📷 **Mã QR → Link** | Đọc **mọi** mã QR (nhiều mã / trang) trong ảnh, PDF (cả bản scan), Word → Excel (link / nội dung tiếng Việt) |
+
+| 🔗 Trích xuất link | 🏞️ PDF → Ảnh + link | 📷 Mã QR → Link |
+|---|---|---|
+| ![Trích xuất link](docs/screenshots/12-dao-trich-xuat-link.png) | ![PDF → Ảnh + link](docs/screenshots/13-dao-pdf-anh-link.png) | ![Mã QR → Link](docs/screenshots/14-dao-ma-qr-link.png) |
+
+> [!TIP]
+> Trích hoặc đọc được link thì bấm **“Tạo mã QR từ các link này”** — danh sách sang thẳng **Link → Mã QR** (giữ nhãn, bỏ link trùng) để phân loại và tạo mã mới.
+
+---
+
+## 🧰 Bộ công cụ — 35 công cụ · 5 nhóm
 
 ![Bộ công cụ](docs/screenshots/07-cong-cu.png)
 
 | Nhóm | Công cụ |
 |---|---|
-| 🏛️ **Văn thư & số hóa** | ⚡ Xử lý hàng loạt (lưu thành công thức) · ✉️ Trộn văn bản (mẫu Word + Excel) · 🗄️ Số hóa hồ sơ (scan → PDF tìm kiếm được + sổ danh mục) · 📥 Văn bản đến (tự điền sổ đăng ký) · 📐 Kiểm tra thể thức (NĐ 30) · 🔍 So sánh văn bản · 🏛️ Xuất PDF/A lưu trữ · 🕶️ Che thông tin cá nhân (CCCD, SĐT, email…) · 📂 Thư mục tự động (máy scan thả file → tự xử lý) |
-| 📕 **PDF** | 🔗 Nối · ✂️ Tách · 🗑️ Xoá trang · 🔀 Sắp xếp trang · 🗜️ Nén · 🩹 Sửa tệp lỗi · 🔤 PDF → Văn bản (OCR) · 🔄 Xoay · 🔢 Đánh số trang · 💧 Dấu bản quyền · 📏 Cắt lề · 🔒 Đặt mật khẩu · 🔓 Gỡ mật khẩu |
-| 🔁 **Chuyển đổi** | 🖼️ Ảnh → PDF · 🏞️ PDF → JPG (150 – 600 dpi) · 📘 Word → PDF · 📙 PowerPoint → PDF · 📗 Excel → PDF · 📝 PDF → Word · 📊 PDF → Excel · 🧩 Nối Word / Excel / PowerPoint |
-| 🛠️ **Tiện ích** | 🔳 QR từ Excel / CSV · 🏷️ Đổi tên hàng loạt (tiền tố + số thứ tự, đổi đuôi) |
+| 🏛️ **Văn thư & Dịch vụ công** | ⚡ Xử lý hàng loạt (lưu thành công thức) · ✉️ Trộn văn bản (mẫu Word + Excel) · 🗄️ Số hóa hồ sơ (scan → PDF tìm kiếm được + sổ danh mục) · 📥 Văn bản đến (tự điền sổ đăng ký) · 📐 Kiểm tra thể thức (NĐ 30) · 🔍 So sánh văn bản · 📂 Thư mục tự động (máy scan thả file → tự xử lý) · 🏷️ Đổi tên hàng loạt |
+| 🔗 **Link & Mã QR** | 🔗 Trích xuất link · 📷 Mã QR → Link · 🏞️ PDF → Ảnh + link · 🔳 QR từ Excel / CSV |
+| 🔁 **Chuyển đổi & Office** | 📘 Word / 📗 Excel / 📙 PowerPoint → PDF · 🖼️ Ảnh → PDF · 🏞️ PDF → JPG (150 – 600 dpi) · 📝 PDF → Word · 📊 PDF → Excel · 🔤 PDF → Văn bản (OCR) · 🧩 Nối Word / Excel / PowerPoint |
+| 📕 **Sắp xếp & chỉnh sửa PDF** | 🔗 Nối · ✂️ Tách · 🗑️ Xoá trang · 🔀 Sắp xếp trang · 🔄 Xoay · 📏 Cắt lề · 🔢 Đánh số trang · 💧 Dấu bản quyền |
+| 🔒 **Bảo mật, tối ưu & lưu trữ** | 🔒 Đặt mật khẩu · 🔓 Gỡ mật khẩu · 🕶️ Che thông tin cá nhân (CCCD, SĐT, email…) · 🗜️ Nén · 🩹 Sửa tệp lỗi · 🏛️ Xuất PDF/A lưu trữ |
+
+Ô **tìm nhanh** phía trên lưới: gõ không dấu vẫn ra (`ma qr`, `nen pdf`, `the thuc`…).
 
 | ⚡ Xử lý hàng loạt | 🗄️ Số hóa hồ sơ |
 |---|---|
@@ -246,6 +303,14 @@ Mỗi công cụ báo kết quả kèm **📄 Mở file / 📂 Mở thư mục**
 | ![Cài đặt](docs/screenshots/10-cai-dat.png) | ![Giao diện tối](docs/screenshots/11-giao-dien-toi.png) |
 
 📁 Thư mục mã QR / dự án · ✅ Kiểm tra hệ thống · 🧾 Nhật ký lỗi · 💾 Sao lưu / khôi phục (chuyển máy) · 🔄 Cập nhật phần mềm · 🎨 4 giao diện (Cyber · Neon, Obsidian · Gold, Sci-Fi · Purple, Classic · Light) · ⌨️ Phím tắt **Ctrl+N / Ctrl+S / Ctrl+O**, **Tab / Shift+Tab**, **Enter / Space**, **Esc**.
+
+---
+
+### 🖥️ Mọi màn hình, mọi thiết bị
+
+<p align="center"><img src="docs/screenshots/15-thu-gon.png" alt="Cửa sổ hẹp: menu thu gọn" width="62%"></p>
+
+Cửa sổ hẹp (Snap nửa màn hình, máy tính bảng): menu trái thu thành **cột icon** (rê chuột / Tab hiện tên), hàng nút **tự xuống dòng**, trang dài **cuộn được**, nút chính luôn ghim đáy; hộp thoại không vượt quá màn hình. Được kiểm thử tự động trên 8 loại màn hình: HD 100 / 125 %, 1024 × 768, máy tính bảng 1280 × 800 150 %, Full HD 150 / 175 %, 2K 200 %, 4K 250 %.
 
 ---
 
@@ -269,7 +334,7 @@ Mỗi công cụ báo kết quả kèm **📄 Mở file / 📂 Mở thư mục**
 | | Hiện tượng | Cách xử lý |
 |:-:|---|---|
 | 🛡️ | **"Windows protected your PC"** | Bấm **More info → Run anyway** (ứng dụng chưa ký mã) |
-| 💻 | Laptop 14 inch thiếu nút / chữ bị cắt | Cập nhật lên **7.0.1** trở lên — giao diện tự co giãn theo mức phóng chữ 100 – 200 % |
+| 💻 | Màn hình nhỏ / phóng chữ lớn: thiếu nút, chữ bị cắt | Cập nhật lên **7.1.0** — giao diện co giãn mọi màn hình (1024 × 768 → 4K, 100 – 250 %) |
 | 📎 | Không xuất được PDF từ Word / Excel / PowerPoint | Máy chưa cài Microsoft Office — các chức năng khác vẫn dùng bình thường |
 | 🔑 | "file được đặt mật khẩu mở" | Mở bằng Office, gỡ mật khẩu (**File › Info › Protect**) rồi làm lại |
 | 📄 | PDF kết quả mang tên mới (`…_1.pdf`) | File cùng tên đang mở trong trình xem PDF nên không ghi đè được |
@@ -282,7 +347,7 @@ Mỗi công cụ báo kết quả kèm **📄 Mở file / 📂 Mở thư mục**
 ## 📜 Nhật ký thay đổi
 
 > [!TIP]
-> **Mới nhất — 7.0.1:** hiển thị đầy đủ trên laptop 14 inch (Full HD phóng chữ 150 %, màn 1366 × 768, màn 2K 200 %): menu trái tự nới theo chữ, nút luôn ghim đáy trang, cửa sổ vừa vùng làm việc.
+> **Mới nhất — 7.1.0:** ⇄ **Đảo tính năng** cho cả 3 chức năng chính (trích xuất link, PDF → ảnh + link, mã QR → link); menu và Bộ công cụ xếp theo nhóm + tìm nhanh; hiển thị đủ thành phần trên **mọi màn hình** (1024 × 768 → 4K, máy tính bảng, cửa sổ thu nhỏ).
 
 Xem đầy đủ ở **[📜 CHANGELOG.md](CHANGELOG.md)** và **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 

@@ -1,6 +1,6 @@
 <h1 align="center"><img src="../banner.png" alt="Auto Link — PDF, clerical & public-service toolkit" width="100%"></h1>
 
-<p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — Word → Hyperlink, Image → linked PDF, Link → QR code, Vietnamese OCR and 32 PDF / Office tools in one Windows app.</b></p>
+<p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — Word → Hyperlink, Image → linked PDF, Link → QR code, Vietnamese OCR, ⇄ reverse functions and 35 PDF / Office tools in one Windows app.</b></p>
 
 <p align="center">🇻🇳 <a href="../../README.md">Tiếng Việt</a> · 🇬🇧 <b>English</b></p>
 
@@ -11,10 +11,11 @@
 </p>
 <p align="center">
   <img alt="Vietnamese OCR" src="https://img.shields.io/badge/OCR-Vietnamese-F59E0B?style=flat-square&logo=googletranslate&logoColor=white">
-  <img alt="32 tools" src="https://img.shields.io/badge/32-PDF%20%2F%20Office%20tools-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
+  <img alt="35 tools" src="https://img.shields.io/badge/35-PDF%20%2F%20Office%20tools-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
   <img alt="QR" src="https://img.shields.io/badge/QR-level%20H-10B981?style=flat-square&logo=qrcode&logoColor=white">
   <img alt="Offline" src="https://img.shields.io/badge/data-100%25%20local-0EA5E9?style=flat-square&logo=shield&logoColor=white">
-  <img alt="Scaling" src="https://img.shields.io/badge/display-100%E2%80%93200%25-64748B?style=flat-square&logo=windowsterminal&logoColor=white">
+  <img alt="Reverse" src="https://img.shields.io/badge/%E2%87%84-reverse%20functions-D97706?style=flat-square">
+  <img alt="Any screen" src="https://img.shields.io/badge/any%20screen-1024%C3%97768%20%E2%86%92%204K-64748B?style=flat-square&logo=windowsterminal&logoColor=white">
 </p>
 
 <p align="center"><img src="../screenshots/01-word-hyperlink.png" alt="Auto Link" width="92%"></p>
@@ -39,7 +40,7 @@ After installing, open **⚙️ Settings › ✅ System check** — every item s
 | | Component | Requirement |
 |:-:|---|---|
 | 🪟 | OS | Windows 10 / 11 **64-bit** |
-| 🖥️ | Display | From **1366 × 768**, any scaling **100 – 200 %** |
+| 🖥️ | Display | **Any size**: 1024 × 768 to 4K, scaling **100 – 250 %**, 14-inch laptops, tablets; small / snapped windows keep every control |
 | 📎 | Microsoft Office 2013+ | Only for **Word / Excel / PowerPoint → PDF** and merging Office files |
 | 🌐 | Network | Not required — only when you click **Scrape links** or for internal updates |
 
@@ -77,8 +78,8 @@ Compared with the previous scrape: **new**, **removed**, **renamed / re-categori
 </td>
 <td valign="top">
 
-### 🧰 32 tools
-Recipe-based batch processing, mail merge, **records digitisation**, **incoming-document register**, **Decree 30/2020 formatting check**, document compare, **PDF/A**, personal-data redaction…
+### 🧰 35 tools · 5 groups
+Grouped by task with **quick search**: recipe-based batch processing, mail merge, **records digitisation**, **incoming-document register**, **Decree 30/2020 formatting check**, document compare, **PDF/A**, personal-data redaction…
 
 </td>
 <td valign="top">
@@ -112,6 +113,24 @@ Revert the last run: new files go to the **Recycle Bin**, overwritten files are 
 
 ---
 
+## ⇄ Reverse functions
+
+Every main function has a **⇄ Reverse** button next to its title that opens the opposite direction:
+
+| Main function | ⇄ Reverse | Output |
+|---|---|---|
+| 📝 Word → Hyperlink | 🔗 **Extract links** | Every link in Word / PDF (hyperlinks, plain-text URLs incl. tables, QR images) → Excel: all occurrences + unique list; optional **remove hyperlinks** keeping the text |
+| 🖼️ Image → linked PDF | 🏞️ **PDF → images + links** | One JPG per page (100 – 300 dpi) + an Excel list of each page's links |
+| 🔳 Link → QR code | 📷 **QR code → links** | Reads **all** QR codes in images, PDFs (incl. scans) and Word files → Excel |
+
+| 🔗 Extract links | 🏞️ PDF → images + links | 📷 QR code → links |
+|---|---|---|
+| ![Extract](../screenshots/12-dao-trich-xuat-link.png) | ![PDF images](../screenshots/13-dao-pdf-anh-link.png) | ![Read QR](../screenshots/14-dao-ma-qr-link.png) |
+
+Found links can be sent straight to **Link → QR code** with one click (**“Create QR codes from these links”**).
+
+---
+
 ## 🧭 Walkthrough
 
 ```mermaid
@@ -141,10 +160,11 @@ flowchart LR
 
 | Group | Tools |
 |---|---|
-| 🏛️ **Clerical & digitisation** | ⚡ Batch processing · ✉️ Mail merge · 🗄️ Records digitisation · 📥 Incoming documents · 📐 Formatting check (Decree 30) · 🔍 Document compare · 🏛️ PDF/A export · 🕶️ Personal-data redaction · 📂 Watch folder |
-| 📕 **PDF** | 🔗 Merge · ✂️ Split · 🗑️ Delete pages · 🔀 Reorder · 🗜️ Compress · 🩹 Repair · 🔤 PDF → text (OCR) · 🔄 Rotate · 🔢 Page numbers · 💧 Watermark · 📏 Crop · 🔒 Lock · 🔓 Unlock |
-| 🔁 **Convert** | 🖼️ Images → PDF · 🏞️ PDF → JPG (150 – 600 dpi) · 📘 Word / 📙 PowerPoint / 📗 Excel → PDF · 📝 PDF → Word · 📊 PDF → Excel · 🧩 Merge Word / Excel / PowerPoint |
-| 🛠️ **Utilities** | 🔳 QR from Excel / CSV · 🏷️ Batch rename |
+| 🏛️ **Clerical & public service** | ⚡ Batch processing · ✉️ Mail merge · 🗄️ Records digitisation · 📥 Incoming documents · 📐 Formatting check (Decree 30) · 🔍 Document compare · 📂 Watch folder · 🏷️ Batch rename |
+| 🔗 **Links & QR** | 🔗 Extract links · 📷 QR code → links · 🏞️ PDF → images + links · 🔳 QR from Excel / CSV |
+| 🔁 **Convert & Office** | 📘 Word / 📗 Excel / 📙 PowerPoint → PDF · 🖼️ Images → PDF · 🏞️ PDF → JPG (150 – 600 dpi) · 📝 PDF → Word · 📊 PDF → Excel · 🔤 PDF → text (OCR) · 🧩 Merge Word / Excel / PowerPoint |
+| 📕 **Arrange & edit PDF** | 🔗 Merge · ✂️ Split · 🗑️ Delete pages · 🔀 Reorder · 🔄 Rotate · 📏 Crop · 🔢 Page numbers · 💧 Watermark |
+| 🔒 **Security, optimise & archive** | 🔒 Lock · 🔓 Unlock · 🕶️ Personal-data redaction · 🗜️ Compress · 🩹 Repair · 🏛️ PDF/A export |
 
 ---
 
@@ -158,7 +178,7 @@ Settings live in `%APPDATA%\AutoLink\`, QR codes and `LichSu_MaQR.csv` in `Docum
 ## 📜 Changelog · ⚖️ License
 
 > [!TIP]
-> **Latest — 7.0.1:** full layout on 14-inch laptops (Full HD at 150 %, 1366 × 768, 2K at 200 %).
+> **Latest — 7.1.0:** ⇄ reverse functions for all 3 main features, grouped menu + tools with quick search, full layout on **any screen** (1024 × 768 → 4K, tablets, small windows).
 
 See **[📜 CHANGELOG.md](../../CHANGELOG.md)** (Vietnamese) and **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 
