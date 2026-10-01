@@ -1,6 +1,6 @@
 <h1 align="center"><img src="../banner.png" alt="Auto Link — PDF, clerical & public-service toolkit" width="100%"></h1>
 
-<p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — Word → Hyperlink, Image → linked PDF, Link → QR code, Vietnamese OCR, ⇄ reverse functions and 35 PDF / Office tools in one Windows app.</b></p>
+<p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — Word → Hyperlink, Image → linked PDF, Link → QR code, Vietnamese OCR, ⇄ reverse functions (with procedure names) and 35 PDF / Office tools in one Windows app. 3-day free trial.</b></p>
 
 <p align="center">🇻🇳 <a href="../../README.md">Tiếng Việt</a> · 🇬🇧 <b>English</b></p>
 
@@ -16,6 +16,8 @@
   <img alt="Offline" src="https://img.shields.io/badge/data-100%25%20local-0EA5E9?style=flat-square&logo=shield&logoColor=white">
   <img alt="Reverse" src="https://img.shields.io/badge/%E2%87%84-reverse%20functions-D97706?style=flat-square">
   <img alt="Any screen" src="https://img.shields.io/badge/any%20screen-1024%C3%97768%20%E2%86%92%204K-64748B?style=flat-square&logo=windowsterminal&logoColor=white">
+  <img alt="3-day trial" src="https://img.shields.io/badge/trial-3%20days%20free-16A34A?style=flat-square&logo=gift&logoColor=white">
+  <img alt="English / Vietnamese" src="https://img.shields.io/badge/UI-English%20%2F%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-2563EB?style=flat-square&logo=googletranslate&logoColor=white">
 </p>
 
 <p align="center"><img src="../screenshots/01-word-hyperlink.png" alt="Auto Link" width="92%"></p>
@@ -35,6 +37,10 @@
 
 **Setup package:** extract the zip, double-click **`Cai_dat.cmd`** → installs per-user to `%LOCALAPPDATA%\Programs\AutoLink` (no admin rights), verifies the **SHA-256** of `Auto_Link.exe` against `version.json`. Put the extracted folder on a network share that only IT can write to: when IT replaces it with a newer build, every PC offers the update on next launch (hash-checked, with automatic rollback).
 
+**First launch:** sign in with your **Gmail** → **3-day free trial** with every feature. When it ends, the app asks you to **upgrade to Pro — 49,000 VND / month** to keep using every feature (see **[💳 Pricing](#-pricing--activation)**). Switch the interface to English with the **EN** button on the top bar.
+
+**Automatic updates:** when a new release is on GitHub, a bar shows the release notes → click **Update now** to download, verify the **digital signature + SHA-256**, swap the file and restart. A tampered download is never installed.
+
 After installing, open **⚙️ Settings › ✅ System check** — every item should show ✓.
 
 | | Component | Requirement |
@@ -42,7 +48,7 @@ After installing, open **⚙️ Settings › ✅ System check** — every item s
 | 🪟 | OS | Windows 10 / 11 **64-bit** |
 | 🖥️ | Display | **Any size**: 1024 × 768 to 4K, scaling **100 – 250 %**, 14-inch laptops, tablets; small / snapped windows keep every control |
 | 📎 | Microsoft Office 2013+ | Only for **Word / Excel / PowerPoint → PDF** and merging Office files |
-| 🌐 | Network | Not required — only when you click **Scrape links** or for internal updates |
+| 🌐 | Network | Document processing **works offline**. Needed for sign-in / license activation, updates, or when you click **Scrape links** |
 
 ---
 
@@ -104,8 +110,28 @@ Revert the last run: new files go to the **Recycle Bin**, overwritten files are 
 </td>
 <td valign="top">
 
-### 🔒 Private · ⌨️ Keyboard · 🎨 4 themes
-**100 % local** processing; fully keyboard-operable; 4 light / dark themes; adapts to any display scaling.
+### 🔒 Private · ⌨️ Keyboard
+Documents are processed **100 % locally**, never uploaded; fully keyboard-operable; adapts to any display scaling.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### 🎨 8 themes · 5 icon sets
+**Neumorphism** light / dark, **Glass · Aurora**, **Next-Gen · Holo** plus 4 classic themes; Fluent, Fluent color, Classic, Emoji and Thin-line icons; smooth motion effects (optional).
+
+</td>
+<td valign="top">
+
+### 🌐 English ⇄ Vietnamese
+The **EN / VI** button on the top bar switches the whole interface instantly — no restart.
+
+</td>
+<td valign="top">
+
+### 🔄 Auto-update · 💳 Trial
+New release on GitHub → **one click to update** (signature-checked). **3-day trial**, then **Pro 49,000 VND / month**, **activates automatically** after payment.
 
 </td>
 </tr>
@@ -119,9 +145,11 @@ Every main function has a **⇄ Reverse** button next to its title that opens th
 
 | Main function | ⇄ Reverse | Output |
 |---|---|---|
-| 📝 Word → Hyperlink | 🔗 **Extract links** | Every link in Word / PDF (hyperlinks, plain-text URLs incl. tables, QR images) → Excel: all occurrences + unique list; optional **remove hyperlinks** keeping the text |
-| 🖼️ Image → linked PDF | 🏞️ **PDF → images + links** | One JPG per page (100 – 300 dpi) + an Excel list of each page's links |
-| 🔳 Link → QR code | 📷 **QR code → links** | Reads **all** QR codes in images, PDFs (incl. scans) and Word files → Excel |
+| 📝 Word → Hyperlink | 🔗 **Extract links** | Every link in Word / PDF (hyperlinks, plain-text URLs incl. tables, QR images): all occurrences with **procedure code + name** + unique list; optional **remove hyperlinks** keeping the text |
+| 🖼️ Image → linked PDF | 🏞️ **PDF → images + links** | One JPG per page (100 – 300 dpi) + each page's links with procedure names |
+| 🔳 Link → QR code | 📷 **QR code → links** | Reads **all** QR codes in images, PDFs (incl. scans) and Word files → links / text + **procedure code and name** |
+
+**Report format:** 📊 Excel · 📝 Word · 📕 PDF · 📄 TXT · 🧾 CSV · or **📎 same as source** (Word → Word, PDF → PDF) — remembered for next time.
 
 | 🔗 Extract links | 🏞️ PDF → images + links | 📷 QR code → links |
 |---|---|---|
@@ -151,12 +179,16 @@ flowchart LR
 | ![Options](../screenshots/02-tuy-chon.png) | ![Processing](../screenshots/03-xu-ly.png) |
 | 🔳 **Link → QR code** | ☑️ **Pick links to generate** |
 | ![Link to QR](../screenshots/04-link-qr.png) | ![Categorise](../screenshots/05-phan-loai.png) |
-| 🗂️ **QR history** | 🧰 **32 tools** |
+| 🗂️ **QR history** | 🧰 **35 tools · accordion groups** |
 | ![History](../screenshots/06-lich-su.png) | ![Tools](../screenshots/07-cong-cu.png) |
 | ⚡ **Batch processing** | 🗄️ **Records digitisation** |
 | ![Batch](../screenshots/08-xu-ly-hang-loat.png) | ![Digitise](../screenshots/09-so-hoa.png) |
 | ⚙️ **Settings** | 🌙 **Dark theme — Obsidian · Gold** |
 | ![Settings](../screenshots/10-cai-dat.png) | ![Dark theme](../screenshots/11-giao-dien-toi.png) |
+| 🌌 **Glass · Aurora** | 🌈 **Next-Gen · Holo** |
+| ![Glass Aurora](../screenshots/16-chu-de-glass-aurora.png) | ![Holo](../screenshots/18-chu-de-holo.png) |
+| ☁️ **Neumorphism · Light** | 🌐 **English interface** |
+| ![Neumorphism](../screenshots/17-chu-de-neumorphism.png) | ![English](../screenshots/21-english.png) |
 
 | Group | Tools |
 |---|---|
@@ -168,17 +200,45 @@ flowchart LR
 
 ---
 
+## 💳 Pricing & activation
+
+| Plan | Price | Duration | Includes |
+|---|---|---|---|
+| 🎁 **Trial** | Free | 3 days (once per PC) | Every feature |
+| ⭐ **Pro · 1 month** | **49,000 VND** | 31 days | **Every feature** + updates |
+| 🏆 **Pro · 12 months** | **490,000 VND** | 366 days | Price of 10 months — **2 months free** |
+
+After the 3-day trial, processing features require **Pro** — the app shows an upgrade notice (at launch, when you use a feature, or the moment the trial ends).
+
+<sub>Current prices are always shown in the app (**💳 Payment** button). A license is tied to the registered **Gmail + PC**. Prepaid, no auto-renewal — see the **[📜 Terms of use, privacy & refunds](../DIEU_KHOAN.md#english-summary)**.</sub>
+
+1. When the trial ends the app asks you to **upgrade to Pro** (to upgrade early: **💳 Payment › Upgrade to Pro**) → choose **Pro 1 month** or **Pro 12 months**.
+2. Scan the **VietQR** code with any Vietnamese banking app — **amount and transfer note are pre-filled** (the note is unique to your PC, please keep it).
+3. Click **Copy activation code** → send it with the **transaction screenshot** via **Zalo 0788962643**.
+4. Once confirmed, the license **activates automatically** — or paste the license code `AL1.…` you received and click **Activate**.
+
+<p align="center"><img src="../screenshots/19-thanh-toan.png" alt="License & payment" width="72%"></p>
+
+## 📞 Contact & support
+
+| | Channel | |
+|:-:|---|---|
+| 💬 | **Zalo / phone** | **[0788962643](https://zalo.me/0788962643)** — setup help, licenses, bug reports, office-wide purchases |
+| 🌐 | **Website** | **[mechamike.vercel.app](https://mechamike.vercel.app/)** |
+
+<p align="center"><img src="../screenshots/20-lien-he.png" alt="Contact" width="72%"></p>
+
 ## 🔒 Privacy
 
 > [!IMPORTANT]
-> All Word, PDF, image and link files are **processed on your PC** and never uploaded. The app only goes online when **you click Scrape links** (fetching exactly the page you pasted) or when checking the **internal update folder** configured by IT.
+> All Word, PDF, image and link files are **processed on your PC** and never uploaded. The app only goes online when **you click Scrape links** (fetching exactly the page you pasted), to **check your license** (only a **hashed** account ID is sent — never your Gmail or documents) and to **check / download updates** from GitHub (or the internal update folder configured by IT).
 
-Settings live in `%APPDATA%\AutoLink\`, QR codes and `LichSu_MaQR.csv` in `Documents\AUTO_LINK_QR`, projects in `Documents\AUTO_LINK_Projects`, the error log at `%APPDATA%\AutoLink\error.log`.
+Settings and the license file live in `%APPDATA%\AutoLink\`, QR codes and `LichSu_MaQR.csv` in `Documents\AUTO_LINK_QR`, projects in `Documents\AUTO_LINK_Projects`, the error log at `%APPDATA%\AutoLink\error.log`.
 
 ## 📜 Changelog · ⚖️ License
 
 > [!TIP]
-> **Latest — 7.1.0:** ⇄ reverse functions for all 3 main features, grouped menu + tools with quick search, full layout on **any screen** (1024 × 768 → 4K, tablets, small windows).
+> **Latest — 8.0.0:** reverse functions with **procedure code + name** and **Excel / Word / PDF / TXT / CSV / same-as-source** reports; **accordion** toolbox; **8 themes** (Neumorphism, Glass Aurora, Next-Gen Holo…), **5 icon sets**, motion effects; **English ⇄ Vietnamese**; **Payment · Zalo · Website** buttons; **3-day trial**, then **Pro 49,000 VND / month** with automatic activation; **auto-update from GitHub** (signature-checked).
 
 See **[📜 CHANGELOG.md](../../CHANGELOG.md)** (Vietnamese) and **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 

@@ -1,5 +1,49 @@
 # Nhật ký thay đổi — Auto Link
 
+## 8.0.0 — 01/10/2026
+**Đảo tính năng: có mã + tên thủ tục, chọn định dạng báo cáo**
+- Trích xuất link, PDF → Ảnh + link, Mã QR → Link: thêm cột **Mã thủ tục** và **Tên thủ tục / Nội dung** (lấy từ chữ
+  quanh link trong Word / PDF, sổ Theo dõi TTHC, lịch sử mã QR, danh sách link đang mở).
+- Chọn định dạng báo cáo: **Excel, Word, PDF, TXT, CSV** hoặc **Theo file gốc** (Word → Word, PDF → PDF…); app nhớ
+  lựa chọn lần sau.
+
+**Bộ công cụ dạng accordion**: các nhóm thu gọn sẵn; bấm 1 nhóm thì nhóm đó mở, nhóm khác tự đóng (trượt mượt); ô tìm
+nhanh tự mở nhóm có kết quả.
+
+**Giao diện**
+- 8 chủ đề (thêm 4): **Neumorphism sáng / tối**, **Glass · Aurora**, **Next-Gen · Holo**. Cài đặt có bảng ô màu xem
+  trước, bấm là đổi.
+- 5 bộ icon đổi tại chỗ: Fluent, Fluent màu, Cổ điển, Emoji, Nét mảnh.
+- Hiệu ứng chuyển động (tắt được): nhóm trượt mở, thông báo trượt vào, gợn sóng khi bấm nút, vạch sáng khi chuyển trang.
+- Nút **EN / VI** trên thanh đầu: đổi toàn bộ giao diện Tiếng Việt ⇄ English ngay (dữ liệu, tên file giữ nguyên).
+- Thanh đầu có nút **Thanh toán** (mã VietQR ngân hàng), **Zalo** 0788962643 (mã QR), **Website** mechamike.vercel.app.
+
+**Bản quyền & thanh toán** (chỉ áp dụng ở bản `Auto_Link.exe`)
+- Đăng nhập Gmail (có thể thêm đăng nhập Google qua trình duyệt — OAuth PKCE — khi chủ sản phẩm cấu hình).
+- Dùng thử **3 ngày / máy**: chống xoá file / sửa tay / lùi đồng hồ (lưu kèm mã kiểm tra + registry).
+- **Gói Pro 49.000đ / tháng** (đủ mọi chức năng; gói 12 tháng 490.000đ = giá 10 tháng): mã VietQR có sẵn số tiền + nội
+  dung chuyển khoản riêng từng khách → gửi mã kích hoạt + ảnh giao dịch qua Zalo.
+- Hết 3 ngày dùng thử → app hiện thông báo **yêu cầu nâng cấp gói Pro** (lúc mở app, khi bấm bất kỳ chức năng nào, và tự
+  hiện nếu app đang mở đúng lúc hết hạn); đang dùng thử thì nhắc trước giá gói Pro. Thư mục tự động tạm dừng khi hết hạn
+  (không xử lý miễn phí), có bản quyền là tự chạy lại.
+- Chủ sản phẩm duyệt bằng công cụ quản trị (`admin\autolink_admin.py`, không đóng gói vào EXE) → giấy phép ký số
+  Ed25519 gắn Gmail + máy, đưa lên GitHub → app **tự kích hoạt** (kiểm tra mỗi 30 phút, mỗi phút khi đang mở trang
+  thanh toán); hoặc dán mã bản quyền `AL1.…` để kích hoạt ngay. Thu hồi được; giá, số ngày dùng thử, tài khoản nhận tiền
+  đổi được qua cấu hình cửa hàng đã ký (không cần phát hành bản mới).
+- App chỉ gửi **mã băm tài khoản** lên GitHub để kiểm tra — tài liệu luôn xử lý trên máy. Giấy phép đăng công khai chỉ
+  chứa mã băm (Gmail + máy), không chứa Gmail.
+- **Điều khoản sử dụng & Chính sách quyền riêng tư** (NĐ 13/2023, hoàn tiền, không tự gia hạn): hộp đăng nhập báo
+  "Tiếp tục nghĩa là bạn đồng ý…" + nút **Điều khoản**; trang thanh toán cũng có nút Điều khoản.
+
+**Cập nhật tự động qua GitHub**: mở app (tối đa 12 giờ / lần) kiểm tra bản phát hành mới → thanh thông báo kèm ghi chú
+phiên bản → bấm **Cập nhật ngay**: tải (có tiến độ), kiểm chữ ký số + SHA-256, thay file khi app đóng rồi tự mở lại.
+Bản tải về bị sửa → không cập nhật. Thư mục cập nhật nội bộ của IT vẫn dùng được.
+
+**Khác**
+- Hướng dẫn trong app thêm mục Giao diện & ngôn ngữ, Bản quyền & thanh toán.
+- Hộp đăng nhập hiện khi đã vừa nội dung (không chớp hàng nút bị ép trên màn nhỏ).
+- Tự kiểm tra EXE thêm mục "Bản quyền (chữ ký số, VietQR) + báo cáo Word / PDF / TXT / CSV".
+
 ## 7.1.1 — 01/10/2026 (bản sửa lỗi)
 - **"Mở file" ở màn hình kết quả không mở được** (`[WinError -2147221003] Application not found`): máy đặt ứng dụng
   khác (vd WPS) mở PDF nhưng thiếu liên kết hệ thống `.pdf`. Mọi nút mở file / thư mục dùng `open_path`: chuẩn hoá
