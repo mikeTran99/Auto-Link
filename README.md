@@ -1,4 +1,4 @@
-<h1 align="center"><img src="docs/banner.png" alt="Auto Link — Bộ công cụ PDF, Văn thư & Dịch vụ công" width="100%"></h1>
+<h1 align="center"><img src="docs/banner-v8.0.1.png" alt="Auto Link — Bộ công cụ PDF, Văn thư & Dịch vụ công" width="100%"></h1>
 
 <p align="center"><b>Bộ công cụ PDF, Văn thư &amp; Dịch vụ công cho bộ phận một cửa — Word → Hyperlink, Ảnh → PDF có link, Link → Mã QR, OCR tiếng Việt, ⇄ Đảo tính năng (có tên thủ tục) và 36 công cụ PDF / Office trong một ứng dụng Windows. Dùng thử miễn phí 3 ngày.</b></p>
 
@@ -34,7 +34,11 @@
   <a href="#-nhật-ký-thay-đổi">📜 Thay đổi</a>
 </p>
 
-<p align="center"><img src="docs/screenshots/01-word-hyperlink.png" alt="Giao diện Auto Link" width="92%"></p>
+> **Bản phát hành hiện tại: [8.0.1 · 02/10/2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.0.1).** Có QR + kiosk từ danh mục TTHC, 36 công cụ trong 5 nhóm và bản sửa lỗi thanh toán khi đổi giá.
+
+<sub>Ảnh minh họa đã che thông tin tài khoản, đường dẫn riêng và toàn bộ mã QR. QR thanh toán thực tế nằm trong ứng dụng; thời gian dùng thử và giá áp dụng theo cấu hình hiển thị trong app.</sub>
+
+<p align="center"><img src="docs/screenshots/01-word-hyperlink-v8.0.1.png" alt="Giao diện Auto Link" width="92%"></p>
 
 ---
 
@@ -48,7 +52,7 @@ Vào **[Releases](https://github.com/mikeTran99/Auto-Link/releases/latest)** và
 |:-:|---|---|---|
 | 🚀 | **[Auto-Link-win.exe](https://github.com/mikeTran99/Auto-Link/releases/latest/download/Auto-Link-win.exe)** | Dùng ngay trên 1 máy | 1 tệp duy nhất — bấm đúp là chạy, không cần cài |
 | 📦 | **[Auto-Link-win-setup.zip](https://github.com/mikeTran99/Auto-Link/releases/latest/download/Auto-Link-win-setup.zip)** | Cài cho cả cơ quan | Lối tắt Start + Desktop, gỡ trong **Settings › Apps**, IT chép lên thư mục mạng để các máy **tự cập nhật** |
-| 🔐 | **[SHA256SUMS.txt](https://github.com/mikeTran99/Auto-Link/releases/latest/download/SHA256SUMS.txt)** | Kiểm tra tệp tải về | So với `Get-FileHash .\Auto-Link-win.exe` (PowerShell) |
+| 🔐 | **[SHA256SUMS.txt](https://github.com/mikeTran99/Auto-Link/releases/latest/download/SHA256SUMS.txt)** + **[SHA256SUMS.txt.sig](https://github.com/mikeTran99/Auto-Link/releases/latest/download/SHA256SUMS.txt.sig)** | Kiểm tra tệp tải về | Mã SHA-256 và chữ ký phát hành; app kiểm cả hai trước khi cập nhật |
 
 ### 2️⃣ Chạy / cài đặt
 
@@ -60,7 +64,7 @@ Vào **[Releases](https://github.com/mikeTran99/Auto-Link/releases/latest)** và
 2. Lần đầu mở mất vài giây để giải nén; các lần sau nhanh hơn.
 
 > [!TIP]
-> Nếu hiện bảng xanh **"Windows protected your PC"** (SmartScreen): bấm **More info** → **Run anyway**. Ứng dụng chưa mua chứng thư ký mã nên Windows cảnh báo ở lần đầu — không phải virus.
+> Nếu hiện bảng xanh **"Windows protected your PC"** (SmartScreen): bấm **More info** → **Run anyway**. EXE chưa có chứng thư ký mã Windows. Bản tải về được bảo vệ bằng SHA-256 và chữ ký phát hành của tác giả; chỉ tải từ trang Releases chính thức.
 
 </details>
 
@@ -86,7 +90,7 @@ Lần đầu mở: nhập **Gmail** → dùng thử **miễn phí 3 ngày**, đ�
 
 ### 4️⃣ Kiểm tra máy
 
-Mở **⚙️ Cài đặt › ✅ Kiểm tra hệ thống** → mọi mục (mã QR, Word, PDF tiếng Việt, OCR, Microsoft Office, bản quyền) phải có dấu ✓.
+Mở **⚙️ Cài đặt › ✅ Kiểm tra hệ thống** để kiểm tra QR, PDF, OCR, bản quyền và các thành phần trên máy. Các mục xuất PDF bằng Office cần Microsoft Office tương ứng.
 
 ### 💻 Yêu cầu hệ thống
 
@@ -94,8 +98,8 @@ Mở **⚙️ Cài đặt › ✅ Kiểm tra hệ thống** → mọi mục (mã
 |:-:|---|---|
 | 🪟 | Hệ điều hành | Windows 10 / 11 **64-bit** |
 | 🖥️ | Màn hình | **Mọi cỡ**: từ 1024 × 768 tới 4K, phóng chữ **100 – 250 %**, laptop 14 inch, máy tính bảng; cửa sổ thu nhỏ / Snap nửa màn hình vẫn đủ thành phần |
-| 📎 | Microsoft Office 2013+ | Chỉ cần cho **Word / Excel / PowerPoint → PDF** và **nối file Office** |
-| 🌐 | Mạng | Xử lý tài liệu **không cần mạng**. Cần mạng khi đăng nhập / kích hoạt bản quyền, cập nhật, hoặc khi bạn bấm **Cào link** |
+| 📎 | Microsoft Office 2013+ | Cần cho **Word / Excel / PowerPoint → PDF**, nối file Office và xuất PDF khi trộn văn bản |
+| 🌐 | Mạng | Xử lý tài liệu **không cần mạng**. Cần mạng khi đăng nhập / kích hoạt bản quyền, cập nhật, **Cào link** hoặc đối chiếu danh mục TTHC với Cổng DVC |
 
 ---
 
@@ -200,7 +204,7 @@ Nút **EN / VI** trên thanh đầu đổi toàn bộ giao diện ngay lập t�
 <td valign="top">
 
 ### 🔄 Tự cập nhật · 💳 Dùng thử
-Bản mới trên GitHub → **1 bấm để cập nhật** (kiểm chữ ký số). Dùng thử **3 ngày**, rồi **gói Pro 49.000đ / tháng**, **tự kích hoạt** sau khi thanh toán.
+Bản mới trên GitHub → **1 bấm để cập nhật** (kiểm chữ ký phát hành và SHA-256). Dùng thử **3 ngày**, rồi **gói Pro 49.000đ / tháng**; app **tự nhận bản quyền khi thanh toán được xác nhận**.
 
 </td>
 </tr>
@@ -227,13 +231,13 @@ flowchart LR
 
 | 1️⃣ Chọn dữ liệu | 2️⃣ Tuỳ chọn |
 |---|---|
-| ![Bước 1](docs/screenshots/01-word-hyperlink.png) | ![Bước 2](docs/screenshots/02-tuy-chon.png) |
+| ![Bước 1](docs/screenshots/01-word-hyperlink-v8.0.1.png) | ![Bước 2](docs/screenshots/02-tuy-chon-v8.0.1.png) |
 
 - 🔎 **Quét mã QR trong bảng** — giải mã ảnh QR trong bảng và điền link vào ô kế bên.
 - ➕ **Thêm link mới vào cuối file** — chèn phần liên kết dịch vụ công (địa chỉ + chữ hiển thị tuỳ chọn).
 - 📄 **Định dạng đầu ra** — PDF và Word / chỉ PDF / chỉ Word · **Khổ giấy**: A4 dọc, A4 ngang, A3 dọc, theo mẫu Word.
 
-<p align="center"><img src="docs/screenshots/03-xu-ly.png" alt="Bước 3 — Xử lý" width="85%"></p>
+<p align="center"><img src="docs/screenshots/03-xu-ly-v8.0.1.png" alt="Bước 3 — Xử lý" width="85%"></p>
 
 **3️⃣ Xử lý:** tiến độ từng file, nhật ký chi tiết có ô tích, **📂 Mở thư mục kết quả** và **↩️ Khôi phục** cả lượt.
 
@@ -256,20 +260,40 @@ flowchart LR
     classDef pink fill:#EC4899,stroke:#BE185D,color:#fff
 ```
 
-![Link → Mã QR](docs/screenshots/04-link-qr.png)
+![Link → Mã QR](docs/screenshots/04-link-qr-v8.0.1.png)
 
 - 🌐 **Cào link bám đúng trang đã dán** — Cổng DVC Quốc gia: trang chủ, nhóm dịch vụ, Dịch vụ công trực tuyến, Tra cứu thủ tục, Thủ tục liên thông; xếp thư mục như trên Cổng (lĩnh vực, cơ quan, đối tượng…). Trang khác: link ở nội dung chính, bỏ menu / đầu / chân trang.
 - 💾 Trang chặn trình duyệt tự động: lưu trang (**Ctrl+S**) rồi bấm **Mở trang đã lưu**.
 - ☑️ **Tích từng link hoặc cả thư mục** — chỉ tạo mã cho link đã chọn; danh sách trên 500 link không tự chọn hết để tránh nặng máy.
 
-![Phân loại link](docs/screenshots/05-phan-loai.png)
+![Phân loại link](docs/screenshots/05-phan-loai-v8.0.1.png)
 
 > [!TIP]
 > Gõ **không dấu** vẫn tìm ra (`ho tich` → *Hộ tịch*). Đặt `[Tên thư mục]` ở một dòng riêng phía trên nhóm link để tự xếp mã QR vào thư mục con.
 
+### 🖥️ Danh mục TTHC (Excel) → QR + Kiosk · mới trong 8.0.1
+
+Từ danh mục thủ tục của đơn vị, tạo bộ tra cứu để đặt tại quầy một cửa hoặc máy kiosk cảm ứng.
+
+1. Mở **Link → Mã QR › Danh mục TTHC (Excel) → QR + Kiosk**, hoặc **Bộ công cụ › Link & Mã QR**.
+2. Chọn Excel có cột **Mã TTHC / Tên thủ tục / Lĩnh vực / Link**; đọc nhiều sheet, mỗi sheet có thể là một bộ phận. Công cụ chuẩn hóa mã bị lệch định dạng.
+3. Đối chiếu Cổng DVC Quốc gia theo mã; nếu không có mã, dùng tên chính xác. Thủ tục có trên Cổng nhận link và QR; không tìm thấy thì ghi **Nộp trực tiếp** để bạn rà soát.
+
+| Chọn danh mục Excel | Trang tra cứu kiosk cảm ứng |
+|---|---|
+| ![Danh mục TTHC](docs/screenshots/23-danh-muc-tthc-v8.0.1.png) | ![Kiosk tra cứu](docs/screenshots/24-kiosk-tra-cuu-v8.0.1.png) |
+
+| Kết quả | Công dụng |
+|---|---|
+| `Kiosk_TraCuuTTHC/index.html` + `Mo_kiosk.cmd` | Trang tự chứa: tìm không dấu, bàn phím ảo, lọc bộ phận, mở trang thủ tục; tự về màn đầu sau 2 phút; mở bằng Edge chế độ kiosk |
+| `DanhMuc_TTHC_KetQua.xlsx` | Danh sách kết quả có link, thuận tiện kiểm tra và cập nhật |
+| `DanhMuc_TTHC_MaQR.docx` + `QR/` | Danh mục Word có QR theo bộ phận và các ảnh mã để in niêm yết |
+
+Trang kiosk đã xuất có thể tra cứu khi mất mạng; bước đối chiếu Cổng DVC và mở trang thủ tục cần Internet. Khi danh mục thay đổi, chạy lại công cụ để cập nhật bộ tra cứu.
+
 ### 🗂️ Lịch sử mã QR & Nhật ký xử lý
 
-![Lịch sử mã QR](docs/screenshots/06-lich-su.png)
+![Lịch sử mã QR](docs/screenshots/06-lich-su-v8.0.1.png)
 
 Lưu **vĩnh viễn** mọi mã đã tạo: 🔍 tìm kiếm · ☑️ tích chọn · 📋 sao chép link · 🔳 mở mã / 📂 thư mục · 🗑️ xoá (có sao lưu) · ↩️ **khôi phục** mục vừa xoá.
 
@@ -302,7 +326,7 @@ flowchart LR
 
 | 🔗 Trích xuất link | 🏞️ PDF → Ảnh + link | 📷 Mã QR → Link |
 |---|---|---|
-| ![Trích xuất link](docs/screenshots/12-dao-trich-xuat-link.png) | ![PDF → Ảnh + link](docs/screenshots/13-dao-pdf-anh-link.png) | ![Mã QR → Link](docs/screenshots/14-dao-ma-qr-link.png) |
+| ![Trích xuất link](docs/screenshots/12-dao-trich-xuat-link-v8.0.1.png) | ![PDF → Ảnh + link](docs/screenshots/13-dao-pdf-anh-link-v8.0.1.png) | ![Mã QR → Link](docs/screenshots/14-dao-ma-qr-link-v8.0.1.png) |
 
 > [!TIP]
 > Trích hoặc đọc được link thì bấm **“Tạo mã QR từ các link này”** — danh sách sang thẳng **Link → Mã QR** (giữ nhãn, bỏ link trùng) để phân loại và tạo mã mới.
@@ -311,21 +335,21 @@ flowchart LR
 
 ## 🧰 Bộ công cụ — 36 công cụ · 5 nhóm
 
-![Bộ công cụ](docs/screenshots/07-cong-cu.png)
+![Bộ công cụ](docs/screenshots/07-cong-cu-v8.0.1.png)
 
 | Nhóm | Công cụ |
 |---|---|
-| 🏛️ **Văn thư & Dịch vụ công** | ⚡ Xử lý hàng loạt (lưu thành công thức) · ✉️ Trộn văn bản (mẫu Word + Excel) · 🗄️ Số hóa hồ sơ (scan → PDF tìm kiếm được + sổ danh mục) · 📥 Văn bản đến (tự điền sổ đăng ký) · 📐 Kiểm tra thể thức (NĐ 30) · 🔍 So sánh văn bản · 📂 Thư mục tự động (máy scan thả file → tự xử lý) · 🏷️ Đổi tên hàng loạt |
-| 🔗 **Link & Mã QR** | 🔗 Trích xuất link · 📷 Mã QR → Link · 🏞️ PDF → Ảnh + link · 🔳 QR từ Excel / CSV |
-| 🔁 **Chuyển đổi & Office** | 📘 Word / 📗 Excel / 📙 PowerPoint → PDF · 🖼️ Ảnh → PDF · 🏞️ PDF → JPG (150 – 600 dpi) · 📝 PDF → Word · 📊 PDF → Excel · 🔤 PDF → Văn bản (OCR) · 🧩 Nối Word / Excel / PowerPoint |
-| 📕 **Sắp xếp & chỉnh sửa PDF** | 🔗 Nối · ✂️ Tách · 🗑️ Xoá trang · 🔀 Sắp xếp trang · 🔄 Xoay · 📏 Cắt lề · 🔢 Đánh số trang · 💧 Dấu bản quyền |
-| 🔒 **Bảo mật, tối ưu & lưu trữ** | 🔒 Đặt mật khẩu · 🔓 Gỡ mật khẩu · 🕶️ Che thông tin cá nhân (CCCD, SĐT, email…) · 🗜️ Nén · 🩹 Sửa tệp lỗi · 🏛️ Xuất PDF/A lưu trữ |
+| 🏛️ **Văn thư & Dịch vụ công (8)** | ⚡ Xử lý hàng loạt (lưu thành công thức) · ✉️ Trộn văn bản (mẫu Word + Excel) · 🗄️ Số hóa hồ sơ (scan → PDF tìm kiếm được + sổ danh mục) · 📥 Văn bản đến (tự điền sổ đăng ký) · 📐 Kiểm tra thể thức (NĐ 30) · 🔍 So sánh văn bản · 📂 Thư mục tự động (máy scan thả file → tự xử lý) · 🏷️ Đổi tên hàng loạt |
+| 🔗 **Link & Mã QR (5)** | 🖥️ Danh mục TTHC → Kiosk · 🔗 Trích xuất link · 📷 Mã QR → Link · 🏞️ PDF → Ảnh + link · 🔳 QR từ Excel / CSV |
+| 🔁 **Chuyển đổi & Office (9)** | 📘 Word / 📗 Excel / 📙 PowerPoint → PDF · 🖼️ Ảnh → PDF · 🏞️ PDF → JPG (150 – 600 dpi) · 📝 PDF → Word · 📊 PDF → Excel · 🔤 PDF → Văn bản (OCR) · 🧩 Nối Word / Excel / PowerPoint |
+| 📕 **Sắp xếp & chỉnh sửa PDF (8)** | 🔗 Nối · ✂️ Tách · 🗑️ Xoá trang · 🔀 Sắp xếp trang · 🔄 Xoay · 📏 Cắt lề · 🔢 Đánh số trang · 💧 Dấu bản quyền |
+| 🔒 **Bảo mật, tối ưu & lưu trữ (6)** | 🔒 Đặt mật khẩu · 🔓 Gỡ mật khẩu · 🕶️ Che thông tin cá nhân (CCCD, SĐT, email…) · 🗜️ Nén · 🩹 Sửa tệp lỗi · 🏛️ Xuất PDF/A lưu trữ |
 
 Các nhóm **thu gọn sẵn** — bấm tên nhóm để mở (nhóm khác tự đóng, trượt mượt). Ô **tìm nhanh**: gõ không dấu vẫn ra (`ma qr`, `nen pdf`, `the thuc`…), nhóm có kết quả tự mở.
 
 | ⚡ Xử lý hàng loạt | 🗄️ Số hóa hồ sơ |
 |---|---|
-| ![Xử lý hàng loạt](docs/screenshots/08-xu-ly-hang-loat.png) | ![Số hóa hồ sơ](docs/screenshots/09-so-hoa.png) |
+| ![Xử lý hàng loạt](docs/screenshots/08-xu-ly-hang-loat-v8.0.1.png) | ![Số hóa hồ sơ](docs/screenshots/09-so-hoa-v8.0.1.png) |
 
 Mỗi công cụ báo kết quả kèm **📄 Mở file / 📂 Mở thư mục**, **🔁 Xử lý tiếp** và **↩️ Khôi phục**; mọi thao tác ghi vào **Nhật ký xử lý**.
 
@@ -335,21 +359,21 @@ Mỗi công cụ báo kết quả kèm **📄 Mở file / 📂 Mở thư mục**
 
 | ⚙️ Cài đặt | 🌙 Giao diện tối — Obsidian · Gold |
 |---|---|
-| ![Cài đặt](docs/screenshots/10-cai-dat.png) | ![Giao diện tối](docs/screenshots/11-giao-dien-toi.png) |
+| ![Cài đặt](docs/screenshots/10-cai-dat-v8.0.1.png) | ![Giao diện tối](docs/screenshots/11-giao-dien-toi-v8.0.1.png) |
 
 🎨 **8 chủ đề** (bấm ô màu là đổi) · 🔣 **5 bộ icon** · ✨ hiệu ứng chuyển động · 🌐 ngôn ngữ Tiếng Việt / English · 👤 tài khoản & bản quyền · 📁 Thư mục mã QR / dự án · ✅ Kiểm tra hệ thống · 🧾 Nhật ký lỗi · 💾 Sao lưu / khôi phục (chuyển máy) · 🔄 Cập nhật phần mềm · ⌨️ Phím tắt **Ctrl+N / Ctrl+S / Ctrl+O**, **Tab / Shift+Tab**, **Enter / Space**, **Esc**.
 
 | 🌌 Glass · Aurora | ☁️ Neumorphism · Sáng | 🌈 Next-Gen · Holo |
 |---|---|---|
-| ![Glass Aurora](docs/screenshots/16-chu-de-glass-aurora.png) | ![Neumorphism](docs/screenshots/17-chu-de-neumorphism.png) | ![Holo](docs/screenshots/18-chu-de-holo.png) |
+| ![Glass Aurora](docs/screenshots/16-chu-de-glass-aurora-v8.0.1.png) | ![Neumorphism](docs/screenshots/17-chu-de-neumorphism-v8.0.1.png) | ![Holo](docs/screenshots/18-chu-de-holo-v8.0.1.png) |
 
-<p align="center"><img src="docs/screenshots/21-english.png" alt="Giao diện tiếng Anh" width="70%"><br><sub>Nút <b>EN / VI</b>: cả giao diện sang tiếng Anh ngay lập tức</sub></p>
+<p align="center"><img src="docs/screenshots/21-english-v8.0.1.png" alt="Giao diện tiếng Anh" width="70%"><br><sub>Nút <b>EN / VI</b>: cả giao diện sang tiếng Anh ngay lập tức</sub></p>
 
 ---
 
 ### 🖥️ Mọi màn hình, mọi thiết bị
 
-<p align="center"><img src="docs/screenshots/15-thu-gon.png" alt="Cửa sổ hẹp: menu thu gọn" width="62%"></p>
+<p align="center"><img src="docs/screenshots/15-thu-gon-v8.0.1.png" alt="Cửa sổ hẹp: menu thu gọn" width="62%"></p>
 
 Cửa sổ hẹp (Snap nửa màn hình, máy tính bảng): menu trái thu thành **cột icon** (rê chuột / Tab hiện tên), hàng nút **tự xuống dòng**, trang dài **cuộn được**, nút chính luôn ghim đáy; hộp thoại không vượt quá màn hình. Được kiểm thử tự động trên 8 loại màn hình: HD 100 / 125 %, 1024 × 768, máy tính bảng 1280 × 800 150 %, Full HD 150 / 175 %, 2K 200 %, 4K 250 %.
 
@@ -365,13 +389,13 @@ Cửa sổ hẹp (Snap nửa màn hình, máy tính bảng): menu trái thu thà
 
 Hết 3 ngày dùng thử, các chức năng xử lý cần **gói Pro** — app tự hiện thông báo nâng cấp (khi mở app, khi bấm chức năng, hoặc đúng lúc hết hạn).
 
-<sub>Giá hiện hành luôn hiển thị trong app (nút **💳 Thanh toán**). Bản quyền gắn với **Gmail + máy tính** đăng ký. Trả trước, không tự gia hạn — xem **[📜 Điều khoản sử dụng, quyền riêng tư & hoàn tiền](docs/DIEU_KHOAN.md)**.</sub>
+<sub>Giá hiện hành luôn hiển thị trong app (nút **💳 Thanh toán**). Bản quyền gắn với **Gmail + máy tính** đăng ký. Trả trước, không tự động trừ tiền; gia hạn bằng thanh toán gói tiếp theo — xem **[📜 Điều khoản sử dụng, quyền riêng tư & hoàn tiền](docs/DIEU_KHOAN.md)**.</sub>
 
 ```mermaid
 flowchart LR
     A["👤 Đăng nhập Gmail<br/>dùng thử 3 ngày"]:::blue --> B["⭐ Nâng cấp gói Pro<br/>49.000đ / tháng"]:::violet
     B --> C["📱 Quét VietQR<br/>số tiền + nội dung có sẵn"]:::green
-    C --> D["💬 Gửi ảnh giao dịch<br/>+ mã kích hoạt qua Zalo"]:::amber
+    C --> D["💬 Gửi mã kích hoạt<br/>xác nhận thanh toán"]:::amber
     D --> E["✅ Tự kích hoạt<br/>không cần mở lại app"]:::pink
     classDef blue fill:#0EA5E9,stroke:#0369A1,color:#fff
     classDef violet fill:#8B5CF6,stroke:#6D28D9,color:#fff
@@ -382,10 +406,12 @@ flowchart LR
 
 1. Hết dùng thử, app hiện thông báo **yêu cầu nâng cấp gói Pro** (muốn nâng cấp sớm: **💳 Thanh toán › Nâng cấp Pro**) → chọn **Pro 1 tháng** hoặc **Pro 12 tháng**.
 2. Quét mã **VietQR** bằng ứng dụng ngân hàng bất kỳ — **số tiền và nội dung chuyển khoản đã điền sẵn** (nội dung riêng cho máy của bạn, vui lòng giữ nguyên).
-3. Bấm **Sao chép mã kích hoạt** → gửi kèm **ảnh chụp giao dịch** qua **Zalo 0788962643**.
-4. Khi được xác nhận, bản quyền **tự kích hoạt** (app tự kiểm tra) — hoặc dán mã bản quyền `AL1.…` nhận được rồi bấm **Kích hoạt**.
+3. Bấm **Sao chép mã kích hoạt** → gửi qua **Zalo 0788962643** để được đối chiếu số tiền và nội dung chuyển khoản. Có thể gửi kèm ảnh giao dịch để hỗ trợ tra cứu.
+4. Sau khi chủ sản phẩm xác nhận và cấp giấy phép, app **tự nhận bản quyền**: mỗi phút khi mở trang thanh toán, hoặc bấm **Kiểm tra ngay**. Mã `AL1.…` dùng để kích hoạt thủ công khi cần.
 
-<p align="center"><img src="docs/screenshots/19-thanh-toan.png" alt="Bản quyền & thanh toán" width="72%"></p>
+**Gia hạn:** thanh toán gói tiếp theo với đúng Gmail, máy và nội dung chuyển khoản. Công cụ quản trị có thể cộng thời gian còn lại khi gia hạn sớm; app tự nhận giấy phép mới và cập nhật ngày hết hạn sau khi được duyệt. Bản 8.0.1 dùng bước xác nhận của chủ sản phẩm, chưa tự đối soát giao dịch ngân hàng.
+
+<p align="center"><img src="docs/screenshots/19-thanh-toan-v8.0.1.png" alt="Bản quyền & thanh toán" width="72%"></p>
 
 > [!NOTE]
 > Mua cho **cả cơ quan / nhiều máy**, xuất hoá đơn, đổi máy tính: liên hệ Zalo **0788962643**.
@@ -398,14 +424,14 @@ flowchart LR
 | 🌐 | **Website** | **[mechamike.vercel.app](https://mechamike.vercel.app/)** |
 | 🐞 | **Báo lỗi** | Gửi kèm **⚙️ Cài đặt › 🧾 Nhật ký lỗi** qua Zalo |
 
-<p align="center"><img src="docs/screenshots/20-lien-he.png" alt="Liên hệ & ủng hộ" width="72%"><br><sub>Nút <b>Thanh toán · Zalo · Website</b> có sẵn trên thanh đầu của app</sub></p>
+<p align="center"><img src="docs/screenshots/20-lien-he-v8.0.1.png" alt="Liên hệ & ủng hộ" width="72%"><br><sub>Nút <b>Thanh toán · Zalo · Website</b> có sẵn trên thanh đầu của app</sub></p>
 
 ---
 
 ## 🔒 Dữ liệu & quyền riêng tư
 
 > [!IMPORTANT]
-> Mọi tệp Word, PDF, ảnh, danh sách link được **xử lý ngay trên máy**, không tải lên bất kỳ máy chủ nào. Ứng dụng chỉ kết nối mạng khi **bạn bấm Cào link** (tải đúng trang bạn đã dán), khi **kiểm tra bản quyền** (chỉ gửi **mã băm** tài khoản — không gửi Gmail, không gửi tài liệu) và khi **kiểm tra / tải bản cập nhật** từ GitHub (hoặc thư mục nội bộ do IT cấu hình).
+> Tài liệu được **xử lý trên máy**, không tải lên máy chủ. App kết nối mạng khi bạn cào link hoặc đối chiếu Cổng DVC; kiểm tra bản quyền bằng **mã băm tài khoản** và tải cấu hình cửa hàng đã ký; kiểm tra / tải bản cập nhật; hoặc đăng nhập Google nếu đã cấu hình và bạn chọn dùng. Gmail và tài liệu không được gửi lên GitHub để kiểm tra bản quyền.
 
 | | Nội dung | Vị trí |
 |:-:|---|---|
@@ -424,7 +450,7 @@ flowchart LR
 |:-:|---|---|
 | 🛡️ | **"Windows protected your PC"** | Bấm **More info → Run anyway** (ứng dụng chưa ký mã) |
 | 💻 | Màn hình nhỏ / phóng chữ lớn: thiếu nút, chữ bị cắt | Cập nhật bản mới nhất — giao diện co giãn mọi màn hình (1024 × 768 → 4K, 100 – 250 %) |
-| 💳 | Đã chuyển khoản nhưng chưa kích hoạt | Mở **Thanh toán › Kiểm tra ngay**; vẫn chưa được thì nhắn Zalo **0788962643** kèm ảnh giao dịch + mã kích hoạt |
+| 💳 | Đã chuyển khoản nhưng chưa kích hoạt | Mở **Thanh toán › Kiểm tra ngay**; vẫn chưa được thì nhắn Zalo **0788962643** kèm mã kích hoạt và thông tin giao dịch để đối chiếu |
 | 🔁 | Đổi máy tính / cài lại Windows | Bản quyền gắn với máy — nhắn Zalo kèm **mã kích hoạt** trên máy mới để được chuyển bản quyền |
 | 🔄 | Không tự cập nhật | Mạng chặn GitHub — tải bản mới ở **[Releases](https://github.com/mikeTran99/Auto-Link/releases/latest)** rồi chạy đè |
 | 🕒 | "Đồng hồ máy bị lùi" | Chỉnh lại ngày giờ Windows (tự động đồng bộ giờ) rồi mở lại app |
@@ -433,7 +459,7 @@ flowchart LR
 | 📄 | PDF kết quả mang tên mới (`…_1.pdf`) | File cùng tên đang mở trong trình xem PDF nên không ghi đè được |
 | 🔤 | PDF → Word / OCR mất dấu | Tích **Nhận dạng lại cả trang đã có sẵn chữ**; scan từ 300 dpi |
 | 🚫 | "Windows đang chặn ghi vào…" | **Windows Security › Bảo vệ khỏi ransomware**: cho phép `Auto_Link.exe`, hoặc chọn thư mục kết quả khác |
-| 🦠 | Phần mềm diệt virus chặn file | Tệp đóng gói 1 file đôi khi bị báo nhầm — kiểm tra mã trong `SHA256SUMS.txt` rồi thêm ngoại lệ |
+| 🦠 | Phần mềm diệt virus chặn file | Tải từ Releases chính thức, đối chiếu SHA-256; nếu vẫn bị chặn, gửi tên phần mềm diệt virus và thông báo lỗi cho hỗ trợ |
 
 ---
 
