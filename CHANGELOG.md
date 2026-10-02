@@ -1,5 +1,44 @@
 # Nhật ký thay đổi — Auto Link
 
+## 8.0.1 — 02/10/2026
+**Mới: Danh mục TTHC (Excel) → mã QR + trang tra cứu cho máy kiosk cảm ứng** (trang Link → Mã QR, nút "Danh mục TTHC
+(Excel) → QR + Kiosk"; Bộ công cụ › Link & Mã QR)
+- Đọc mọi sheet của file danh mục (sheet = bộ phận), cột Mã TTHC / Tên thủ tục / Lĩnh vực / Link theo tên cột; mã ghi
+  lệch ("2.002.400", "2002638", số Excel bỏ số 0) tự chuẩn hoá.
+- Đối chiếu toàn bộ CSDL thủ tục Cổng DVC Quốc gia (~6.500, thường + liên thông): theo mã, không mã thì theo nguyên
+  tên (không đoán gần đúng). Có trên Cổng → link trang thủ tục + mã QR; không có → "Nộp trực tiếp". Thử với danh mục
+  371 thủ tục cấp phường: 321 có trên Cổng, 50 nộp trực tiếp (~80 giây).
+- Kết quả: trang kiosk `index.html` 1 tệp (tìm theo tên gõ không dấu, bàn phím ảo, lọc theo bộ phận, mã QR + nút mở
+  trang, tự về màn đầu sau 2 phút) + `Mo_kiosk.cmd` (Edge chế độ kiosk); Excel kết quả có link; Word danh mục có mã QR
+  theo từng bộ phận.
+
+**Sửa lỗi**
+- **Đổi giá ở công cụ quản trị làm trang thanh toán của khách lỗi "'name'", không hiện mã QR:** công cụ chỉ đăng giá,
+  app gộp cấu hình nông nên mất tên + số ngày gói. Công cụ nay đăng đủ tên + số ngày + giá (sửa luôn cho app 8.0.0 đang
+  chạy); app gộp cấu hình sâu (cấu hình chỉ có giá vẫn giữ tên / số ngày).
+- **Tự cập nhật / kiểm chữ ký số khi app được mở từ PowerShell 7:** trước đây PowerShell nạp nhầm module của bản 7
+  (biến `PSModulePath` thừa hưởng) → không thay được file và không tự mở lại app. Mọi tiến trình PowerShell con của app
+  nay dùng môi trường sạch.
+- **Hộp "Chọn link vừa cào":** dòng tiêu đề dài tự xuống dòng trên màn nhỏ phóng chữ to (trước đây bị cắt chữ).
+- **Kiểm tra tự động trên GitHub (CI) chạy được trọn vẹn:** sửa lỗi bảng mã khi in ra màn hình (máy CI dùng cp1252),
+  test PowerPoint tự bỏ qua khi máy không có Office; lint thêm `banquyen.py`, `ngonngu.py`.
+- **Quản trị:** công cụ quản trị có lệnh `--cap` (cấp với số ngày tuỳ chọn: gia hạn sớm, chuyển máy, tặng ngày) và
+  `--thu-hoi` (thu hồi chỉ bằng Gmail + mã máy); tab Cấu hình cửa hàng điền đúng cấu hình đang chạy (đăng lại không vô
+  tình đổi giá / tắt đăng nhập Google). Sổ tay quản trị `docs/SO_TAY_QUAN_TRI.md`; script đóng gói phát hành
+  `scripts/dong_goi_phat_hanh.py`. Bảng Sổ đã cấp chia cột theo nội dung, cửa sổ công cụ to theo DPI màn hình.
+- **Công cụ quản trị "kích hoạt từ xa" 1 màn hình** (biểu tượng **Auto Link Quản trị** trên Desktop / Start, tạo bằng
+  `--tao-loi-tat`): dán tin nhắn khách (mã kích hoạt hoặc Gmail + mã máy, nhập tay — không nhận dạng ảnh) → tự điền
+  Gmail / mã máy / gói, hiện nội dung CK + số tiền để đối chiếu sao kê; khách cũ chỉ gửi Gmail hoặc mã máy → tra sổ;
+  gia hạn sớm tự cộng ngày còn lại (đọc giấy phép đang chạy trên GitHub); bắt buộc tích "Đã thấy tiền vào tài khoản";
+  lưu ảnh minh chứng (cột Minh chứng); đăng rồi đọc lại GitHub; chép sẵn tin nhắn trả lời khách. Sổ đã cấp: tìm, lọc
+  sắp hết hạn 7 ngày, bấm đúp để gia hạn / thu hồi. Sổ tay quản trị riêng `Auto_Link_So_tay_quan_tri.docx`.
+- **Công cụ quản trị dạng EXE** (`scripts/dong_goi_quan_tri.py` → `dist\AutoLink_QuanTri.exe`, không chứa khoá): máy mới
+  mở lần đầu chọn `owner_key.txt` từ USB (chỉ nhận đúng khoá chủ sản phẩm), tự tạo biểu tượng Desktop; gọi GitHub CLI
+  không bật cửa sổ đen, máy chưa cài `gh` thì báo cách cài. Ô "Mã bản quyền (key) gửi khách" hiện mã vừa cấp.
+- **Sổ tay Word / PDF có ảnh minh hoạ:** hướng dẫn khách hàng `docs/HUONG_DAN_KHACH_HANG.md` (17 mục) +
+  `scripts/tao_so_tay.py` tạo `Auto_Link_Huong_dan_khach_hang.docx` (gửi khách) và `Auto_Link_So_tay_day_du.docx`
+  (khách hàng + quản trị, nội bộ) kèm PDF, có mục lục, số trang.
+
 ## 8.0.0 — 01/10/2026
 **Đảo tính năng: có mã + tên thủ tục, chọn định dạng báo cáo**
 - Trích xuất link, PDF → Ảnh + link, Mã QR → Link: thêm cột **Mã thủ tục** và **Tên thủ tục / Nội dung** (lấy từ chữ

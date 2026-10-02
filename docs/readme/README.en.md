@@ -1,6 +1,6 @@
 <h1 align="center"><img src="../banner.png" alt="Auto Link — PDF, clerical & public-service toolkit" width="100%"></h1>
 
-<p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — Word → Hyperlink, Image → linked PDF, Link → QR code, Vietnamese OCR, ⇄ reverse functions (with procedure names) and 35 PDF / Office tools in one Windows app. 3-day free trial.</b></p>
+<p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — Word → Hyperlink, Image → linked PDF, Link → QR code, Vietnamese OCR, ⇄ reverse functions (with procedure names) and 36 PDF / Office tools in one Windows app. 3-day free trial.</b></p>
 
 <p align="center">🇻🇳 <a href="../../README.md">Tiếng Việt</a> · 🇬🇧 <b>English</b></p>
 
@@ -11,7 +11,7 @@
 </p>
 <p align="center">
   <img alt="Vietnamese OCR" src="https://img.shields.io/badge/OCR-Vietnamese-F59E0B?style=flat-square&logo=googletranslate&logoColor=white">
-  <img alt="35 tools" src="https://img.shields.io/badge/35-PDF%20%2F%20Office%20tools-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
+  <img alt="36 tools" src="https://img.shields.io/badge/36-PDF%20%2F%20Office%20tools-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
   <img alt="QR" src="https://img.shields.io/badge/QR-level%20H-10B981?style=flat-square&logo=qrcode&logoColor=white">
   <img alt="Offline" src="https://img.shields.io/badge/data-100%25%20local-0EA5E9?style=flat-square&logo=shield&logoColor=white">
   <img alt="Reverse" src="https://img.shields.io/badge/%E2%87%84-reverse%20functions-D97706?style=flat-square">
@@ -73,6 +73,8 @@ Images become a PDF where **clicking the image opens the link** — flyers, proc
 ### 🔳 Link → QR code
 Paste a list or **scrape exactly the page you pasted** (Vietnam National Public Service Portal & any website), **tick individual links**, accent-insensitive search, folder filter; QR codes with **level-H** error correction.
 
+**New in 8.0.1 — Excel procedure catalogue → QR + kiosk:** read multiple sheets, match procedures against the National Public Service Portal, and export a self-contained touch kiosk page, Excel results and a Word catalogue with QR codes.
+
 </td>
 </tr>
 <tr>
@@ -84,7 +86,7 @@ Compared with the previous scrape: **new**, **removed**, **renamed / re-categori
 </td>
 <td valign="top">
 
-### 🧰 35 tools · 5 groups
+### 🧰 36 tools · 5 groups
 Grouped by task with **quick search**: recipe-based batch processing, mail merge, **records digitisation**, **incoming-document register**, **Decree 30/2020 formatting check**, document compare, **PDF/A**, personal-data redaction…
 
 </td>
@@ -179,7 +181,7 @@ flowchart LR
 | ![Options](../screenshots/02-tuy-chon.png) | ![Processing](../screenshots/03-xu-ly.png) |
 | 🔳 **Link → QR code** | ☑️ **Pick links to generate** |
 | ![Link to QR](../screenshots/04-link-qr.png) | ![Categorise](../screenshots/05-phan-loai.png) |
-| 🗂️ **QR history** | 🧰 **35 tools · accordion groups** |
+| 🗂️ **QR history** | 🧰 **36 tools · accordion groups** |
 | ![History](../screenshots/06-lich-su.png) | ![Tools](../screenshots/07-cong-cu.png) |
 | ⚡ **Batch processing** | 🗄️ **Records digitisation** |
 | ![Batch](../screenshots/08-xu-ly-hang-loat.png) | ![Digitise](../screenshots/09-so-hoa.png) |
@@ -238,7 +240,7 @@ Settings and the license file live in `%APPDATA%\AutoLink\`, QR codes and `LichS
 ## 📜 Changelog · ⚖️ License
 
 > [!TIP]
-> **Latest — 8.0.0:** reverse functions with **procedure code + name** and **Excel / Word / PDF / TXT / CSV / same-as-source** reports; **accordion** toolbox; **8 themes** (Neumorphism, Glass Aurora, Next-Gen Holo…), **5 icon sets**, motion effects; **English ⇄ Vietnamese**; **Payment · Zalo · Website** buttons; **3-day trial**, then **Pro 49,000 VND / month** with automatic activation; **auto-update from GitHub** (signature-checked).
+> **Latest — 8.0.1:** **Excel procedure catalogue → QR + touch kiosk**: match procedures against the National Public Service Portal and export a self-contained kiosk page plus Excel and Word QR reports; fixes missing plan names / payment QR codes after price changes and auto-update when launched from PowerShell 7.
 
 See **[📜 CHANGELOG.md](../../CHANGELOG.md)** (Vietnamese) and **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 

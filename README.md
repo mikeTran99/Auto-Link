@@ -1,6 +1,6 @@
 <h1 align="center"><img src="docs/banner.png" alt="Auto Link — Bộ công cụ PDF, Văn thư & Dịch vụ công" width="100%"></h1>
 
-<p align="center"><b>Bộ công cụ PDF, Văn thư &amp; Dịch vụ công cho bộ phận một cửa — Word → Hyperlink, Ảnh → PDF có link, Link → Mã QR, OCR tiếng Việt, ⇄ Đảo tính năng (có tên thủ tục) và 35 công cụ PDF / Office trong một ứng dụng Windows. Dùng thử miễn phí 3 ngày.</b></p>
+<p align="center"><b>Bộ công cụ PDF, Văn thư &amp; Dịch vụ công cho bộ phận một cửa — Word → Hyperlink, Ảnh → PDF có link, Link → Mã QR, OCR tiếng Việt, ⇄ Đảo tính năng (có tên thủ tục) và 36 công cụ PDF / Office trong một ứng dụng Windows. Dùng thử miễn phí 3 ngày.</b></p>
 
 <p align="center">🇻🇳 <b>Tiếng Việt</b> · 🇬🇧 <a href="docs/readme/README.en.md">English</a></p>
 
@@ -11,7 +11,7 @@
 </p>
 <p align="center">
   <img alt="OCR tiếng Việt" src="https://img.shields.io/badge/OCR-ti%E1%BA%BFng%20Vi%E1%BB%87t-F59E0B?style=flat-square&logo=googletranslate&logoColor=white">
-  <img alt="35 công cụ" src="https://img.shields.io/badge/35-c%C3%B4ng%20c%E1%BB%A5%20PDF%20%2F%20Office-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
+  <img alt="36 công cụ" src="https://img.shields.io/badge/36-c%C3%B4ng%20c%E1%BB%A5%20PDF%20%2F%20Office-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
   <img alt="Mã QR" src="https://img.shields.io/badge/M%C3%A3%20QR-m%E1%BB%A9c%20H-10B981?style=flat-square&logo=qrcode&logoColor=white">
   <img alt="NĐ 30" src="https://img.shields.io/badge/th%E1%BB%83%20th%E1%BB%A9c-N%C4%90%2030%2F2020-8B5CF6?style=flat-square&logo=bookstack&logoColor=white">
   <img alt="Offline" src="https://img.shields.io/badge/d%E1%BB%AF%20li%E1%BB%87u-100%25%20tr%C3%AAn%20m%C3%A1y-0EA5E9?style=flat-square&logo=shield&logoColor=white">
@@ -26,7 +26,7 @@
   <a href="#-tính-năng">✨ Tính năng</a> ·
   <a href="#-các-chức-năng">🧭 Các chức năng</a> ·
   <a href="#-đảo-tính-năng">⇄ Đảo tính năng</a> ·
-  <a href="#-bộ-công-cụ--35-công-cụ--5-nhóm">🧰 35 công cụ</a> ·
+  <a href="#-bộ-công-cụ--36-công-cụ--5-nhóm">🧰 36 công cụ</a> ·
   <a href="#-bảng-giá--kích-hoạt">💳 Bảng giá</a> ·
   <a href="#-liên-hệ--hỗ-trợ">📞 Liên hệ</a> ·
   <a href="#-dữ-liệu--quyền-riêng-tư">🔒 Quyền riêng tư</a> ·
@@ -120,6 +120,8 @@ Mọi URL dạng chữ trong `.docx` (kể cả trong bảng) thành **link bấ
 ### 🔳 Link → Mã QR
 Dán danh sách hoặc **cào link đúng theo trang** (Cổng DVC Quốc gia & mọi website), **tích từng link**, tìm không dấu, lọc thư mục; mã QR **mức sửa lỗi H**.
 
+**Mới 8.0.1 — Danh mục TTHC (Excel) → QR + Kiosk:** đọc nhiều sheet, đối chiếu thủ tục trên Cổng DVC, xuất trang tra cứu cảm ứng tự chứa, Excel kết quả và Word danh mục có mã QR.
+
 </td>
 </tr>
 <tr>
@@ -131,7 +133,7 @@ So với lần cào trước: thủ tục **mới**, **không còn**, **đổi t
 </td>
 <td valign="top">
 
-### 🧰 35 công cụ · 5 nhóm
+### 🧰 36 công cụ · 5 nhóm
 Xếp theo việc cần làm + **ô tìm nhanh**: hàng loạt theo công thức, trộn văn bản, **số hóa hồ sơ**, sổ **văn bản đến**, **thể thức NĐ 30**, so sánh văn bản, **PDF/A**, che thông tin cá nhân…
 
 </td>
@@ -307,7 +309,7 @@ flowchart LR
 
 ---
 
-## 🧰 Bộ công cụ — 35 công cụ · 5 nhóm
+## 🧰 Bộ công cụ — 36 công cụ · 5 nhóm
 
 ![Bộ công cụ](docs/screenshots/07-cong-cu.png)
 
@@ -438,7 +440,7 @@ flowchart LR
 ## 📜 Nhật ký thay đổi
 
 > [!TIP]
-> **Mới nhất — 8.0.0:** ⇄ Đảo tính năng có **mã + tên thủ tục**, xuất **Excel / Word / PDF / TXT / CSV / theo file gốc**; Bộ công cụ **accordion**; **8 chủ đề** (Neumorphism, Glass Aurora, Next-Gen Holo…), **5 bộ icon**, hiệu ứng chuyển động; **Tiếng Việt ⇄ English**; nút **Thanh toán · Zalo · Website**; **dùng thử 3 ngày** rồi **gói Pro 49.000đ / tháng** (tự kích hoạt); **tự cập nhật qua GitHub** (kiểm chữ ký số).
+> **Mới nhất — 8.0.1:** **Danh mục TTHC (Excel) → QR + Kiosk**: đối chiếu Cổng DVC, xuất trang tra cứu cảm ứng, Excel và Word có QR; sửa lỗi mất tên gói / mã QR khi đổi giá; sửa tự cập nhật từ PowerShell 7.
 
 Xem đầy đủ ở **[📜 CHANGELOG.md](CHANGELOG.md)** và **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 
