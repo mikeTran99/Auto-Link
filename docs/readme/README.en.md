@@ -1,6 +1,6 @@
-<h1 align="center"><img src="../banner-v8.0.1.png" alt="Auto Link — PDF, clerical & public-service toolkit" width="100%"></h1>
+<h1 align="center"><img src="../banner-v8.2.0.png" alt="Auto Link — PDF, clerical & public-service toolkit" width="100%"></h1>
 
-<p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — Word → Hyperlink, Image → linked PDF, Link → QR code, Vietnamese OCR, ⇄ reverse functions (with procedure names) and 36 PDF / Office tools in one Windows app. 3-day free trial.</b></p>
+<p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — File → Link (Word → Hyperlink · Google Drive links), Image → linked PDF, Link → QR code, PDF → QR code, data reconciliation, Vietnamese OCR, ⇄ reverse functions and 37 PDF / Office tools in one Windows app. 3-day free trial.</b></p>
 
 <p align="center">🇻🇳 <a href="../../README.md">Tiếng Việt</a> · 🇬🇧 <b>English</b></p>
 
@@ -11,7 +11,7 @@
 </p>
 <p align="center">
   <img alt="Vietnamese OCR" src="https://img.shields.io/badge/OCR-Vietnamese-F59E0B?style=flat-square&logo=googletranslate&logoColor=white">
-  <img alt="36 tools" src="https://img.shields.io/badge/36-PDF%20%2F%20Office%20tools-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
+  <img alt="37 tools" src="https://img.shields.io/badge/37-PDF%20%2F%20Office%20tools-EC4899?style=flat-square&logo=adobeacrobatreader&logoColor=white">
   <img alt="QR" src="https://img.shields.io/badge/QR-level%20H-10B981?style=flat-square&logo=qrcode&logoColor=white">
   <img alt="Offline" src="https://img.shields.io/badge/data-100%25%20local-0EA5E9?style=flat-square&logo=shield&logoColor=white">
   <img alt="Reverse" src="https://img.shields.io/badge/%E2%87%84-reverse%20functions-D97706?style=flat-square">
@@ -20,11 +20,11 @@
   <img alt="English / Vietnamese" src="https://img.shields.io/badge/UI-English%20%2F%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-2563EB?style=flat-square&logo=googletranslate&logoColor=white">
 </p>
 
-> **Current release: [8.0.1 · 2 October 2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.0.1).** Excel procedure catalogue → QR + kiosk, 36 tools in five groups, and payment QR fixes after price changes.
+> **Current release: [8.2.0 · 8 October 2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.2.0).** New: **PDF → QR code**, **Google Drive with just a Gmail sign-in** (thousands of files, resumes automatically when the network / Google is busy), **1 / 3 / 6 / 12-month plans**, and a **step-by-step installer** with a Desktop shortcut.
 
 <sub>Illustrative screenshots have account details, private paths and all QR codes redacted. Use the QR shown inside the app for payment. Trial duration and prices follow the configuration displayed in the app.</sub>
 
-<p align="center"><img src="../screenshots/01-word-hyperlink-v8.0.1.png" alt="Auto Link" width="92%"></p>
+<p align="center"><img src="../screenshots/01-file-link-v8.2.0.png" alt="Auto Link" width="92%"></p>
 
 ---
 
@@ -32,6 +32,7 @@
 
 | | File | Use when | Notes |
 |:-:|---|---|---|
+| ⭐ | **[Auto-Link-Setup.exe](https://github.com/mikeTran99/Auto-Link/releases/latest/download/Auto-Link-Setup.exe)** | **New install / reinstall (recommended)** | **Step-by-step installer**: choose folder → ☑ **Desktop shortcut** → install → launch; Start menu shortcut, uninstall in **Settings › Apps**, no admin rights |
 | 🚀 | **[Auto-Link-win.exe](https://github.com/mikeTran99/Auto-Link/releases/latest/download/Auto-Link-win.exe)** | One PC, right now | Single portable file — double-click to run, no install |
 | 📦 | **[Auto-Link-win-setup.zip](https://github.com/mikeTran99/Auto-Link/releases/latest/download/Auto-Link-win-setup.zip)** | A whole office | Start + Desktop shortcuts, uninstall in **Settings › Apps**; IT copies it to a network share for **automatic updates** |
 | 🔐 | **[SHA256SUMS.txt](https://github.com/mikeTran99/Auto-Link/releases/latest/download/SHA256SUMS.txt)** + **[signature](https://github.com/mikeTran99/Auto-Link/releases/latest/download/SHA256SUMS.txt.sig)** | Verify the download | SHA-256 and release signature; the app checks both before updating |
@@ -41,7 +42,7 @@
 
 **Setup package:** extract the zip, double-click **`Cai_dat.cmd`** → installs per-user to `%LOCALAPPDATA%\Programs\AutoLink` (no admin rights), verifies the **SHA-256** of `Auto_Link.exe` against `version.json`. Put the extracted folder on a network share that only IT can write to: when IT replaces it with a newer build, every PC offers the update on next launch (hash-checked, with automatic rollback).
 
-**First launch:** sign in with your **Gmail** → **3-day free trial** with every feature. When it ends, the app asks you to **upgrade to Pro — 49,000 VND / month** to keep using every feature (see **[💳 Pricing](#-pricing--activation)**). Switch the interface to English with the **EN** button on the top bar.
+**First launch:** sign in with your **Gmail** → **3-day free trial** with every feature. When it ends, the app asks you to **upgrade to Pro — from 49,000 VND / month** (3, 6 and 12-month plans save more) to keep using every feature (see **[💳 Pricing](#-pricing--activation)**). Switch the interface to English with the **EN** button on the top bar.
 
 **Automatic updates:** when a new release is on GitHub, a bar shows the release notes → click **Update now** to download, verify the **digital signature + SHA-256**, swap the file and restart. A tampered download is never installed.
 
@@ -77,7 +78,7 @@ Images become a PDF where **clicking the image opens the link** — flyers, proc
 ### 🔳 Link → QR code
 Paste a list or **scrape exactly the page you pasted** (Vietnam National Public Service Portal & any website), **tick individual links**, accent-insensitive search, folder filter; QR codes with **level-H** error correction.
 
-**New in 8.0.1 — Excel procedure catalogue → QR + kiosk:** read multiple sheets, match procedures against the National Public Service Portal, and export a self-contained touch kiosk page, Excel results and a Word catalogue with QR codes.
+**New in 8.2.0 — PDF → QR code:** PDF files on your PC → one QR code per file that opens it (uploaded to your own Google Drive). **Excel procedure catalogue → QR + kiosk:** read multiple sheets, match procedures against the National Public Service Portal, and export a self-contained touch kiosk page, Excel results and a Word catalogue with QR codes.
 
 </td>
 </tr>
@@ -90,7 +91,7 @@ Compared with the previous scrape: **new**, **removed**, **renamed / re-categori
 </td>
 <td valign="top">
 
-### 🧰 36 tools · 5 groups
+### 🧰 37 tools · 5 groups
 Grouped by task with **quick search**: recipe-based batch processing, mail merge, **records digitisation**, **incoming-document register**, **Decree 30/2020 formatting check**, document compare, **PDF/A**, personal-data redaction…
 
 </td>
@@ -137,7 +138,7 @@ The **EN / VI** button on the top bar switches the whole interface instantly —
 <td valign="top">
 
 ### 🔄 Auto-update · 💳 Trial
-New release on GitHub → **one click to update** (signature-checked). **3-day trial**, then **Pro 49,000 VND / month**, **activates automatically** after payment.
+New release on GitHub → **one click to update** (signature-checked). **3-day trial**, then **Pro from 49,000 VND / month** (1 / 3 / 6 / 12 months), **activates automatically** after payment.
 
 </td>
 </tr>
@@ -159,7 +160,7 @@ Every main function has a **⇄ Reverse** button next to its title that opens th
 
 | 🔗 Extract links | 🏞️ PDF → images + links | 📷 QR code → links |
 |---|---|---|
-| ![Extract](../screenshots/12-dao-trich-xuat-link-v8.0.1.png) | ![PDF images](../screenshots/13-dao-pdf-anh-link-v8.0.1.png) | ![Read QR](../screenshots/14-dao-ma-qr-link-v8.0.1.png) |
+| ![Extract](../screenshots/12-dao-trich-xuat-link-v8.2.0.png) | ![PDF images](../screenshots/13-dao-pdf-anh-link-v8.2.0.png) | ![Read QR](../screenshots/14-dao-ma-qr-link-v8.2.0.png) |
 
 Found links can be sent straight to **Link → QR code** with one click (**“Create QR codes from these links”**).
 
@@ -182,19 +183,23 @@ flowchart LR
 
 | 📝 Word → Hyperlink · options | ⚙️ Processing |
 |---|---|
-| ![Options](../screenshots/02-tuy-chon-v8.0.1.png) | ![Processing](../screenshots/03-xu-ly-v8.0.1.png) |
+| ![Options](../screenshots/02-tuy-chon-v8.2.0.png) | ![Processing](../screenshots/03-xu-ly-v8.2.0.png) |
 | 🔳 **Link → QR code** | ☑️ **Pick links to generate** |
-| ![Link to QR](../screenshots/04-link-qr-v8.0.1.png) | ![Categorise](../screenshots/05-phan-loai-v8.0.1.png) |
-| 🗂️ **QR history** | 🧰 **36 tools · accordion groups** |
-| ![History](../screenshots/06-lich-su-v8.0.1.png) | ![Tools](../screenshots/07-cong-cu-v8.0.1.png) |
+| ![Link to QR](../screenshots/04-link-qr-v8.2.0.png) | ![Categorise](../screenshots/05-phan-loai-v8.2.0.png) |
+| 🗂️ **QR history** | 🧰 **37 tools · accordion groups** |
+| ![History](../screenshots/06-lich-su-v8.2.0.png) | ![Tools](../screenshots/07-cong-cu-v8.2.0.png) |
 | ⚡ **Batch processing** | 🗄️ **Records digitisation** |
-| ![Batch](../screenshots/08-xu-ly-hang-loat-v8.0.1.png) | ![Digitise](../screenshots/09-so-hoa-v8.0.1.png) |
+| ![Batch](../screenshots/08-xu-ly-hang-loat-v8.2.0.png) | ![Digitise](../screenshots/09-so-hoa-v8.2.0.png) |
 | ⚙️ **Settings** | 🌙 **Dark theme — Obsidian · Gold** |
-| ![Settings](../screenshots/10-cai-dat-v8.0.1.png) | ![Dark theme](../screenshots/11-giao-dien-toi-v8.0.1.png) |
+| ![Settings](../screenshots/10-cai-dat-v8.2.0.png) | ![Dark theme](../screenshots/11-giao-dien-toi-v8.2.0.png) |
 | 🌌 **Glass · Aurora** | 🌈 **Next-Gen · Holo** |
-| ![Glass Aurora](../screenshots/16-chu-de-glass-aurora-v8.0.1.png) | ![Holo](../screenshots/18-chu-de-holo-v8.0.1.png) |
+| ![Glass Aurora](../screenshots/16-chu-de-glass-aurora-v8.2.0.png) | ![Holo](../screenshots/18-chu-de-holo-v8.2.0.png) |
 | ☁️ **Neumorphism · Light** | 🌐 **English interface** |
-| ![Neumorphism](../screenshots/17-chu-de-neumorphism-v8.0.1.png) | ![English](../screenshots/21-english-v8.0.1.png) |
+| ![Neumorphism](../screenshots/17-chu-de-neumorphism-v8.2.0.png) | ![English](../screenshots/21-english-v8.2.0.png) |
+| ☁️ **File → Google Drive link** — thousands of files, resumes where it stopped | 🔐 **Google sign-in — just your Gmail** (no Client ID / secret) |
+| ![Google Drive](../screenshots/25-file-link-drive-v8.2.0.png) | ![Sign in](../screenshots/29-dang-nhap-google-v8.2.0.png) |
+| 📄 **PDF → QR code** · new in 8.2.0 | 🔄 **Data reconciliation** |
+| ![PDF to QR](../screenshots/26-pdf-ma-qr-v8.2.0.png) | ![Reconcile](../screenshots/27-doi-chieu-v8.2.0.png) |
 
 | Group | Tools |
 |---|---|
@@ -222,20 +227,22 @@ Outputs: a self-contained `Kiosk_TraCuuTTHC/index.html` with an Edge kiosk launc
 |---|---|---|---|
 | 🎁 **Trial** | Free | 3 days (once per PC) | Every feature |
 | ⭐ **Pro · 1 month** | **49,000 VND** | 31 days | **Every feature** + updates |
-| 🏆 **Pro · 12 months** | **490,000 VND** | 366 days | Price of 10 months — **2 months free** |
+| 🥈 **Pro · 3 months** | **139,000 VND** | 92 days | Save **5 %** vs paying monthly |
+| 🥇 **Pro · 6 months** | **259,000 VND** | 183 days | Save **12 %** |
+| 🏆 **Pro · 12 months** | **490,000 VND** | 366 days | Save **17 %** — price of 10 months, **2 months free** |
 
 After the 3-day trial, processing features require **Pro** — the app shows an upgrade notice (at launch, when you use a feature, or the moment the trial ends).
 
 <sub>Current prices are always shown in the app (**💳 Payment** button). A license is tied to the registered **Gmail + PC**. Prepaid, with no automatic bank charge; renew by paying for the next plan — see the **[📜 Terms of use, privacy & refunds](../DIEU_KHOAN.md#english-summary)**.</sub>
 
-1. When the trial ends the app asks you to **upgrade to Pro** (to upgrade early: **💳 Payment › Upgrade to Pro**) → choose **Pro 1 month** or **Pro 12 months**.
+1. When the trial ends the app asks you to **upgrade to Pro** (to upgrade early: **💳 Payment › Upgrade to Pro**) → choose **1, 3, 6 or 12 months** (the QR code follows the selected amount).
 2. Scan the **VietQR** code with any Vietnamese banking app — **amount and transfer note are pre-filled** (the note is unique to your PC, please keep it).
 3. Click **Copy activation code** → send it via **Zalo 0788962643** so the owner can match the amount and transfer note. A transaction screenshot can help with lookup.
 4. After the owner confirms payment and issues the license, the app **receives it automatically**: every minute while the payment window is open, or click **Check now**. The `AL1.…` code is a manual activation fallback.
 
-**Renewal:** pay for the next plan using the same Gmail, PC and transfer note. The admin tool can carry over remaining time for early renewals; the app receives the new license and expiry date after approval. Release 8.0.1 uses owner confirmation and does not automatically reconcile bank transactions.
+**Renewal:** pay for the next plan using the same Gmail, PC and transfer note. The admin tool can carry over remaining time for early renewals; the app receives the new license and expiry date after approval. Activation currently uses owner confirmation and does not automatically reconcile bank transactions.
 
-<p align="center"><img src="../screenshots/19-thanh-toan-v8.0.1.png" alt="License & payment" width="72%"></p>
+<p align="center"><img src="../screenshots/28-thanh-toan-combo-v8.2.0.png" alt="License & payment" width="72%"></p>
 
 ## 📞 Contact & support
 
@@ -256,7 +263,7 @@ Settings and the license file live in `%APPDATA%\AutoLink\`, QR codes and `LichS
 ## 📜 Changelog · ⚖️ License
 
 > [!TIP]
-> **Latest — 8.0.1:** **Excel procedure catalogue → QR + touch kiosk**: match procedures against the National Public Service Portal and export a self-contained kiosk page plus Excel and Word QR reports; fixes missing plan names / payment QR codes after price changes and auto-update when launched from PowerShell 7.
+> **Latest — 8.2.0:** **PDF → QR code**; **Google Drive with just a Gmail sign-in**, robust uploads of thousands of files when Google is busy, resume where it stopped; **1 / 3 / 6 / 12-month plans**; **step-by-step installer** with a Desktop shortcut. **8.1.x:** one-click updates, data reconciliation, File → Google Drive link, real PDF → Word / Excel conversion.
 
 See **[📜 CHANGELOG.md](../../CHANGELOG.md)** (Vietnamese) and **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 

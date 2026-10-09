@@ -1,5 +1,154 @@
 # Nhật ký thay đổi — Auto Link
 
+## 8.2.0 — 08/10/2026
+**Mới: PDF → Mã QR** (Bộ công cụ › Link & Mã QR) — file PDF trong máy thành mã QR quét là mở file
+- Mã QR chỉ chứa ~3 KB nên app tải PDF lên Google Drive của người dùng (ai có link đều xem được, kể cả khi lần trước
+  chọn Riêng tư) rồi tạo mã QR theo **Thiết kế mã QR** — 1 file hay cả thư mục (lấy cả thư mục con, giữ cây thư mục
+  cho mã QR); kết quả vào thư mục mã QR + Lịch sử mã QR.
+- Nhánh **File → Link Google Drive** / **Ảnh → Link Google Drive** có công tắc mới **Tạo mã QR cho mỗi file**.
+- Chưa đăng nhập Google: đăng nhập xong app **tự tải tiếp** (không phải bấm lại).
+
+- **Google Drive: chỉ cần đăng nhập Gmail.** Bản cài có sẵn kết nối Google → trang Cài đặt bỏ nút **Cấu hình**; hộp
+  cấu hình chỉ còn nút lớn **Đăng nhập Google** và **không còn hiện Client ID / Client secret đóng sẵn** (trước đây
+  điền sẵn cả secret, ai mở cũng xem được).
+- Đơn vị muốn dùng ứng dụng Google riêng (hoặc bản chạy từ mã nguồn): 5 bước theo đúng giao diện Google Cloud hiện
+  nay, mỗi bước 1 nút **Mở** tới đúng trang; bấm copy trên trang Google hoặc **Download JSON** → app **tự điền** Client
+  ID / secret (ô secret che dấu chấm); đủ cả 2 mã là app **tự lưu và mở đăng nhập Google** (không phải bấm nút nào).
+
+**Mới: gói combo** — trang thanh toán VietQR có 4 gói: **1 tháng 49.000đ · 3 tháng 139.000đ (tiết kiệm 5%) · 6 tháng
+259.000đ (12%) · 12 tháng 490.000đ (17%)**; mã QR tự điền đúng số tiền gói đã chọn.
+
+**Google Drive bền khi nhiều người cùng tải**
+- Google báo bận (quá hạn mức / lỗi máy chủ tạm / mạng chập chờn): app **tự chờ rồi tải tiếp** (chờ tăng dần, tối đa
+  ~1 phút / lần), dòng trạng thái ghi "Google Drive đang bận — tự tải tiếp sau N giây"; không bỏ file nào.
+- Tải hàng nghìn file: app **tự điều tốc** (mặc định tối đa 60 file / phút / máy, chậm lại khi Google bận rồi tự nhanh lại).
+- **Tải tiếp đúng chỗ dừng:** tắt app / mất mạng / Google bận lâu → mở lại app báo "Còn N file chưa tải lên", bấm
+  **Tải lên** chỉ tải file chưa có link (không tải trùng); file đã lên Drive nhưng chưa chia sẻ được thì chỉ chia sẻ
+  lại (không tạo bản sao). Nút **Bỏ danh sách** xoá danh sách + hàng đợi dở; file đã xoá khỏi máy tự bỏ khỏi hàng đợi.
+- Công cụ **PDF → Mã QR** không còn đổi công tắc "Tạo mã QR" / quyền chia sẻ bạn đã chọn ở nhánh Link Google Drive.
+- Sửa: lỡ đóng tab đăng nhập Google rồi bấm **Đăng nhập** lại thì không có gì xảy ra (app vẫn chờ tới 3 phút) — nay
+  mở lại đúng trang đăng nhập, đăng nhập xong vẫn nhận.
+- Nhận dạng chữ (OCR): 1 trang quá 5 phút thì dừng và báo lỗi rõ (trước đây có thể chờ mãi).
+- App tự kiểm tra kết nối Google mỗi 24 giờ; nhà cung cấp đổi mã kết nối thì app tự nhận, không cần cài bản mới.
+- Sửa: dùng lâu, mở nhiều hộp thoại → tài nguyên đồ hoạ Windows tăng dần (mỗi hộp thoại nạp lại icon) — nay nạp 1 lần.
+
+## 8.1.1 — 08/10/2026
+- **Thanh thông báo từ nhà cung cấp** nổi trên đầu nội dung (không đẩy trang xuống): màn nhỏ 1024×768, cửa sổ thu
+  nhỏ vẫn hiện đủ nút; thông báo dài gộp còn ~2 dòng, bấm **Xem** đọc toàn văn.
+
+## 8.1.0 — 07/10/2026
+**Mới: Tự cập nhật 1 chạm — nút "Cập nhật lên vX" cuối menu trái**
+- App tự hỏi GitHub lúc mở và 3 giờ / lần khi đang mở (máy để cả ngày ở bộ phận một cửa vẫn được báo); có bản mới →
+  thanh "Có phiên bản mới" + nút cuối menu trái đổi thành **Cập nhật lên vX** (nổi bật; bình thường là "Kiểm tra cập
+  nhật").
+- Bấm nút → hỏi lại bản mới nhất → **tải ngay** (thanh tiến độ, nút **Huỷ tải**), kiểm SHA-256 + chữ ký số của tác giả
+  → đóng app, **thay đúng file đang dùng** (không cài thêm bản thứ 2), mở lại bản mới. Không còn bước cài thủ công.
+- Dọn bộ nhớ: mở app tự xoá bản cũ (`.old`) và bản tải dở / bị huỷ (`.new`, `.new.part`) — máy chỉ giữ 1 bản.
+
+**Mới: Đối chiếu dữ liệu** (mục mới ở menu trái) — phân loại thông minh, đối chiếu chính xác, xem lại trước khi ghi
+- **2 hoặc nhiều nguồn cố định** (thêm / xoá được): mỗi nguồn = link Google Sheet công khai hoặc file Excel (.xlsx,
+  .xls) + từ khoá "Cơ quan thực hiện" để nhận thủ tục mới (mặc định: Danh mục cấp Phường = "cấp xã; cấp phường…", Danh
+  mục Phi địa giới = nhận phần còn lại).
+- **Văn bản / danh mục cần cập nhật nhiều loại, chọn nhiều file một lúc**: Quyết định công bố PDF (đọc bảng theo đường
+  kẻ ô, ô gộp, dòng ngắt trang) / Word .docx / .doc → mục A mới ban hành · B sửa đổi, bổ sung · C bãi bỏ; danh mục đầy
+  đủ Excel / CSV / link Google Sheet → so trọn với nguồn trùng nhiều mã nhất.
+- So **chính xác theo mã TTHC** (không có mã: theo đúng tên; bỏ qua chữ "Thủ tục" đầu tên): mã có ở nhiều nguồn → cập
+  nhật mọi nguồn đó; thủ tục mới → nguồn có từ khoá khớp cơ quan thực hiện. Mục đã có người cập nhật trước (đã có / đã
+  đúng / đã bỏ) → báo và bỏ qua.
+- Bảng xem lại: tích chọn từng thay đổi, lọc theo nguồn, chọn dòng thấy đủ mục trong văn bản, cơ quan thực hiện, lý do
+  xếp nguồn, cũ → mới.
+- **Duyệt cập nhật**: hộp xem lại lần cuối liệt kê đúng những gì sẽ ghi → tải lại nguồn, **có người vừa sửa → không ghi,
+  phân tích lại + cảnh báo** → ghi: file Excel ghi thẳng (sao lưu bản cũ vào `SaoLuu_AutoLink`, giữ định dạng + cột
+  khác, ô vừa đổi tô vàng, ghi số quyết định vào cột "Quyết định công bố"; .xls qua Excel); Google Sheet của người khác
+  → bản Excel đã cập nhật + Google Sheet cố định trên Drive của mình (ghi đè cùng link) → báo cáo
+  `DoiChieu_TTHC_<giờ>.xlsx`.
+
+**Đối chiếu dữ liệu — ghi thẳng lên link Google Drive, kiểm từng thay đổi trước khi ghi**
+- Nguồn cố định / văn bản cần cập nhật nhận **link Google Drive** (file Excel, PDF, Word trên Drive, link "Mở bằng
+  Google Sheets") ngoài file máy và Google Sheet công khai; link thuộc tài khoản Drive đang đăng nhập → tải đúng bản
+  gốc qua Drive API.
+- Sửa lỗi lặp "vừa có người cập nhật — phân tích lại": trước so byte bản xuất Google Sheet (gắn giờ xuất → đổi mỗi lần
+  tải); nay so **md5 + phiên bản do Google cấp** (file trên Drive) / **nội dung từng ô** (link công khai, file máy).
+- Duyệt cập nhật 2 pha: **thử ghi mọi nguồn trên bản sao → đọc lại, kiểm đúng từng thêm / sửa / bỏ** (lệch 1 chỗ →
+  dừng, không ghi gì) → mới ghi. Link Drive của tài khoản đang đăng nhập → ghi phiên bản mới vào **đúng link** (link giữ
+  nguyên), kiểm Drive đã lưu đúng nội dung, giữ vĩnh viễn phiên bản trước trong Lịch sử phiên bản + bản sao lưu cục bộ;
+  có người sửa ngay trước khi ghi → không ghi, phân tích lại.
+- Số quyết định văn thư cho bằng ô ký số (ảnh) → đọc ô đó bằng OCR, 4 cách đọc phải trùng nhau mới điền (không đoán).
+
+**File → Link** (đổi tên từ Word → Hyperlink): nhánh Google Drive nhận **mọi loại file**; **nhiều tài khoản Google
+Drive** (Đổi / thêm tài khoản, đăng xuất từng tài khoản); **chọn / tạo thư mục đích trên Drive**; hiện **dung lượng
+Drive** của tài khoản; link mở bằng **đúng tài khoản** đang dùng trong app (Chrome đăng nhập nhiều tài khoản).
+
+**Thông báo từ nhà cung cấp:** thanh trên đầu app hiện thông báo đã ký số (bảo trì, khuyến mãi, hướng dẫn) — bấm
+**Xem** mở link, **✕** ẩn trên máy đó; hết hạn tự ẩn. **Mở app nhanh hơn:** giao diện dựng nhanh ~2 lần (thẻ vẽ 1 lần khi
+cửa sổ hiện), file chạy bỏ thư viện video / AVIF không dùng (~36 MB).
+
+**Cài đặt:** **Cỡ chữ** A− / A+ (85–150 %, cả giao diện co giãn theo, áp dụng khi mở lại app); **Âm báo khi xong
+việc** cho mọi chức năng (tiếng khác khi có lỗi), bật / tắt.
+
+**Mới: PDF → Word, PDF → Excel chuyển thật** (Bộ công cụ › Chuyển đổi & Office)
+- PDF → Word: máy có Word → bộ chuyển PDF của Word (giữ phông, cỡ chữ, bảng, ảnh, khổ giấy); bản Word thiếu chữ so với
+  PDF (Word biến trang thành ảnh) hoặc máy không có Word → tự dựng đoạn văn + bảng theo đường kẻ ô. PDF scan đã có lớp
+  chữ ẩn (OCR) → lấy đúng lớp chữ đó (Word bỏ lớp chữ ẩn, tự nhận dạng lại → sai dấu).
+- PDF → Excel: bảng dựng theo đường kẻ ô — đúng ô, ô gộp, độ rộng cột + chiều cao dòng như PDF, viền, tiêu đề đậm; chữ
+  ngoài bảng giữ thứ tự; bảng sang trang nối liền, bỏ dòng tiêu đề lặp lại.
+
+**Mới: Thiết kế mã QR — logo bất kỳ + 13 kiểu khung viền**
+- Logo: **Tự động bỏ nền đồng màu ở 4 góc** (logo tròn trên nền đen / trắng, ảnh JPG không trong suốt — hết 4 góc đen),
+  Cắt tròn, Bo góc, Giữ nguyên; logo tròn → phần khoét trong mã cũng tròn; **Nền biểu trưng** (đĩa nền sau logo).
+- Khung thêm 7 kiểu: 4 góc ngắm, Viền đôi, Viền nét đứt, Viền + nhãn, Ruy băng, Điện thoại, Huy hiệu tròn (tổng 13).
+- Sửa: lưu PNG nền không trong suốt — vùng ngoài khung bo góc không còn bị đen.
+
+**Mới: Nút số bước 01 · 02 · 03 bấm được** (Word / Ảnh và Link → Mã QR): đi thẳng tới bước đó để sửa rồi chạy lại;
+nút Khôi phục (hoàn tác) đổi biểu tượng cho khỏi nhầm với quay lại bước.
+
+**Link Google Drive:** chọn quyền chia sẻ (chỉ xem / nhận xét / chỉnh sửa / riêng tư), tải cả thư mục giữ nguyên cây
+thư mục trên Drive, đăng nhập xong tự mở My Drive, phiên đăng nhập tự làm mới mỗi 24 giờ (hết hạn → báo đăng nhập lại).
+
+**Mới: Word → Hyperlink và Ảnh → PDF có link chia 2 nhánh rõ ràng** (thanh chọn ở đầu trang)
+- Nhánh 1 như cũ: quét mã QR → hyperlink / PDF có link.
+- Nhánh 2 **→ Link Google Drive**: đăng nhập Google Drive thủ công 1 lần (dùng chung phiên với Cài đặt), chọn file hoặc
+  cả thư mục (gồm thư mục con) Word (.docx, .doc, .rtf, .odt) / ảnh mọi định dạng (jpg, png, gif, webp, heic, tiff…) →
+  tải hàng loạt, mỗi file 1 link xem công khai; bảng link, chép tất cả, bấm đúp chép 1 link, xuất Excel (link bấm được),
+  nút Dừng giữa chừng.
+
+**Mới: Bộ cài `Auto-Link-Setup.exe` đủ bước** (Chào mừng → thư mục cài → ☑ lối tắt Desktop → Cài đặt → ☑ Mở Auto
+Link ngay), tiếng Việt, không cần quyền quản trị, cài đè đúng thư mục cũ (không để 2 bản), tự đóng app đang mở; gỡ được
+trong Settings › Apps.
+
+**Dự án:** sắp xếp lại cây thư mục (ghi chú kỹ thuật → `docs\kien_thuc\`, logo gốc + mẫu QR tham khảo →
+`docs\tham_khao\`, nháp cũ → `_luu_tru_tam\`); `CLAUDE.md` nhập chung `AGENTS.md` (hết lệch đường dẫn `src\`).
+
+**Mới: Danh mục TTHC → Kiosk đọc thêm file `.xls` (Excel đời cũ) và `.csv`**
+- `.xls`: Excel lưu bản sao tạm thành `.xlsx` rồi đọc như cũ (không thêm thư viện, file gốc không đổi; cần máy có
+  Microsoft Excel).
+- `.csv`: tự nhận mã hoá UTF-8 / Windows-1258 và dấu phân cách `;` `,` tab (Excel tiếng Việt hay lưu `;`); bộ phận
+  = tên file.
+- File `.xlsx` đọc y như bản 8.0.1.
+
+**Mới: Tải kết quả lên Google Drive + link chia sẻ công khai** (Word → Hyperlink › Bước 02, dòng "Tải lên Google
+Drive")
+- Viết lại bằng Google Drive API v3 chính thức, chỉ thư viện chuẩn (`src/ggdrive.py`) — bỏ Selenium /
+  webdriver-manager / chromedriver tải từ mạng, không cần Chrome, EXE không nặng thêm.
+- Đăng nhập Google qua trình duyệt (PKCE, dùng chung client của đăng nhập bản quyền), quyền `drive.file`: app chỉ thấy
+  file do chính nó tải lên. Phiên đăng nhập lưu `%APPDATA%\AutoLink\google_drive.json`, mã hoá DPAPI theo tài khoản
+  Windows. Nút Đăng nhập ↔ Đăng xuất (đăng xuất thu hồi quyền trên Google).
+- File kết quả (Word, PDF, ảnh → PDF) vào thư mục "Auto Link" trên Drive, đặt quyền "bất kỳ ai có link đều xem được"
+  (bản cũ chưa chia sẻ → người khác không mở được link); bảng `GoogleDrive_Links.csv` cạnh kết quả; tải resumable (file
+  lớn không nạp hết vào RAM), mã hết hạn giữa lượt tự làm mới; lỗi báo rõ (chưa bật Drive API, hết dung lượng, tổ chức
+  chặn chia sẻ công khai…).
+- Sửa: chọn "chỉ Word" / Ảnh → PDF trước đây bỏ qua bước tải Drive; file link ghi chữ `\n` thay vì xuống dòng.
+- Chủ sản phẩm cần bật Google Drive API + quyền `drive.file` + Publish app (xem Sổ tay quản trị mục 5).
+
+**Sửa lỗi**
+- Thiếu trạng thái `scan_qr` trong bộ theo dõi tác vụ nền (có thể báo `KeyError` khi quét mã QR).
+- Thêm bản dịch tiếng Anh còn thiếu.
+- Mã QR tuỳ chọn màu: màu có kênh trong suốt (`#RRGGBBAA`) trước đây bị bỏ qua âm thầm (mã ra màu đen); tô màu
+  không còn dùng `Image.getdata` (Pillow 14 gỡ bỏ, 10/2027).
+- Dọn lỗi tiềm ẩn: đọc CSV luôn có nội dung dù mọi mã hoá đều sai, `except:` trần, closure dùng biến vòng lặp, file
+  khoá của công cụ quản trị không được đóng.
+- IDE (Pyrefly) báo "Cannot find module auto_link / banquyen…" từ khi chuyển mã vào `src/`: thêm `pyrefly.toml`.
+
 ## 8.0.1 — 02/10/2026
 **Mới: Danh mục TTHC (Excel) → mã QR + trang tra cứu cho máy kiosk cảm ứng** (trang Link → Mã QR, nút "Danh mục TTHC
 (Excel) → QR + Kiosk"; Bộ công cụ › Link & Mã QR)
