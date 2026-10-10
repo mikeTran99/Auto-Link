@@ -1,4 +1,4 @@
-<h1 align="center"><img src="../banner-v8.2.0.png" alt="Auto Link — PDF, clerical & public-service toolkit" width="100%"></h1>
+<h1 align="center"><img src="../banner-v8.3.0.png" alt="Auto Link — PDF, clerical & public-service toolkit" width="100%"></h1>
 
 <p align="center"><b>A PDF, clerical &amp; public-service toolkit for Vietnamese one-stop service desks — File → Link (Word → Hyperlink · Google Drive links), Image → linked PDF, Link → QR code, PDF → QR code, data reconciliation, Vietnamese OCR, ⇄ reverse functions and 37 PDF / Office tools in one Windows app. 3-day free trial.</b></p>
 
@@ -78,7 +78,7 @@ Images become a PDF where **clicking the image opens the link** — flyers, proc
 ### 🔳 Link → QR code
 Paste a list or **scrape exactly the page you pasted** (Vietnam National Public Service Portal & any website), **tick individual links**, accent-insensitive search, folder filter; QR codes with **level-H** error correction.
 
-**New in 8.2.0 — PDF → QR code:** PDF files on your PC → one QR code per file that opens it (uploaded to your own Google Drive). **Excel procedure catalogue → QR + kiosk:** read multiple sheets, match procedures against the National Public Service Portal, and export a self-contained touch kiosk page, Excel results and a Word catalogue with QR codes.
+**New in 8.3.0 — Decree 30/2020 format check** (29 document types, approve each fix) and **text recognition via Google Drive**. **PDF → QR code:** PDF files on your PC → one QR code per file that opens it (uploaded to your own Google Drive). **Excel procedure catalogue → QR + kiosk:** read multiple sheets, match procedures against the National Public Service Portal, and export a self-contained touch kiosk page, Excel results and a Word catalogue with QR codes.
 
 </td>
 </tr>
@@ -212,7 +212,7 @@ flowchart LR
 | ![Neumorphism](../screenshots/17-chu-de-neumorphism-v8.3.0.png) | ![English](../screenshots/21-english-v8.3.0.png) |
 | ☁️ **File → Google Drive link** — thousands of files, resumes where it stopped | 🔐 **Google sign-in — just your Gmail** (no Client ID / secret) |
 | ![Google Drive](../screenshots/25-file-link-drive-v8.3.0.png) | ![Sign in](../screenshots/29-dang-nhap-google-v8.3.0.png) |
-| 📄 **PDF → QR code** · new in 8.2.0 | 🔄 **Data reconciliation** |
+| 📄 **PDF → QR code** | 🔄 **Data reconciliation** |
 | ![PDF to QR](../screenshots/26-pdf-ma-qr-v8.3.0.png) | ![Reconcile](../screenshots/27-doi-chieu-v8.3.0.png) |
 
 | Group | Tools |
@@ -277,7 +277,7 @@ Settings and the license file live in `%APPDATA%\AutoLink\`, QR codes and `LichS
 ## 📜 Changelog · ⚖️ License
 
 > [!TIP]
-> **Latest — 8.2.0:** **PDF → QR code**; **Google Drive with just a Gmail sign-in**, robust uploads of thousands of files when Google is busy, resume where it stopped; **1 / 3 / 6 / 12-month plans**; **step-by-step installer** with a Desktop shortcut. **8.1.x:** one-click updates, data reconciliation, File → Google Drive link, real PDF → Word / Excel conversion.
+> **Latest — 8.3.0:** **Decree 30/2020 format check** — 29 document types, 6 check groups, **approve each fix or all**, a `…_dung_the_thuc.docx` copy + Excel report; **text recognition via Google Drive** (off by default). **Earlier:** **PDF → QR code**; **Google Drive with just a Gmail sign-in**, robust uploads of thousands of files when Google is busy, resume where it stopped; **1 / 3 / 6 / 12-month plans**; **step-by-step installer** with a Desktop shortcut. **8.1.x:** one-click updates, data reconciliation, File → Google Drive link, real PDF → Word / Excel conversion.
 
 See **[📜 CHANGELOG.md](../../CHANGELOG.md)** (Vietnamese) and **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 

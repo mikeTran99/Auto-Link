@@ -1,4 +1,4 @@
-<h1 align="center"><img src="docs/banner-v8.2.0.png" alt="Auto Link — Bộ công cụ PDF, Văn thư & Dịch vụ công" width="100%"></h1>
+<h1 align="center"><img src="docs/banner-v8.3.0.png" alt="Auto Link — Bộ công cụ PDF, Văn thư & Dịch vụ công" width="100%"></h1>
 
 <p align="center"><b>Bộ công cụ PDF, Văn thư &amp; Dịch vụ công cho bộ phận một cửa — File → Link (Word → Hyperlink · Link Google Drive), Ảnh → PDF có link, Link → Mã QR, PDF → Mã QR, Đối chiếu dữ liệu, OCR tiếng Việt, ⇄ Đảo tính năng và 37 công cụ PDF / Office trong một ứng dụng Windows. Dùng thử miễn phí 3 ngày.</b></p>
 
@@ -138,7 +138,7 @@ Mở **⚙️ Cài đặt › ✅ Kiểm tra hệ thống** để kiểm tra QR,
 ### 🔳 Link → Mã QR
 Dán danh sách hoặc **cào link đúng theo trang** (Cổng DVC Quốc gia & mọi website), **tích từng link**, tìm không dấu, lọc thư mục; mã QR **mức sửa lỗi H**.
 
-**Mới 8.2.0 — PDF → Mã QR:** file PDF trong máy → mỗi file 1 mã QR quét là mở file. **Danh mục TTHC (Excel) → QR + Kiosk:** đọc nhiều sheet, đối chiếu thủ tục trên Cổng DVC, xuất trang tra cứu cảm ứng tự chứa, Excel kết quả và Word danh mục có mã QR.
+**Mới 8.3.0 — Kiểm tra thể thức NĐ 30/2020** (29 loại văn bản, duyệt từng sửa đổi) và **nhận dạng chữ qua Google Drive**. **PDF → Mã QR:** file PDF trong máy → mỗi file 1 mã QR quét là mở file. **Danh mục TTHC (Excel) → QR + Kiosk:** đọc nhiều sheet, đối chiếu thủ tục trên Cổng DVC, xuất trang tra cứu cảm ứng tự chứa, Excel kết quả và Word danh mục có mã QR.
 
 </td>
 </tr>
@@ -231,7 +231,7 @@ Bấm **Đăng nhập Google** → chọn Gmail → Cho phép. Không cần Clie
 </td>
 <td valign="top">
 
-### 📄 PDF → Mã QR · mới 8.2.0
+### 📄 PDF → Mã QR
 Chọn file / thư mục PDF → tải lên Drive của bạn → **mỗi file 1 mã QR** theo thiết kế, giữ cây thư mục — in dán hồ sơ, kiosk, bảng niêm yết.
 
 </td>
@@ -350,7 +350,7 @@ giữ nguyên) + báo cáo Excel. Quy tắc riêng của đơn vị (cỡ chữ,
 **Nhận dạng chữ qua Google Drive** (Cài đặt › Nhận dạng chữ › Google — mặc định **Máy này**): scan mờ, chữ IN HOA nhiều
 dấu đọc chính xác hơn; ảnh từng trang lên **Drive của chính bạn** rồi xoá ngay, lỗi mạng thì tự dùng Tesseract.
 
-### 📄 PDF → Mã QR · mới trong 8.2.0
+### 📄 PDF → Mã QR (file PDF trong máy)
 
 Mã QR chỉ chứa ~3 KB nên không chứa nổi cả file: **Bộ công cụ › Link & Mã QR › PDF → Mã QR** → **Chọn file PDF** / **Chọn thư mục PDF** → app tải lên Google Drive của bạn (ai có link đều xem) rồi tạo **mỗi file 1 mã QR** theo Thiết kế mã QR, giữ cây thư mục. Lần đầu chỉ cần đăng nhập Gmail.
 
@@ -526,7 +526,7 @@ flowchart LR
 | 💻 | Màn hình nhỏ / phóng chữ lớn: thiếu nút, chữ bị cắt | Cập nhật bản mới nhất — giao diện co giãn mọi màn hình (1024 × 768 → 4K, 100 – 250 %) |
 | 💳 | Đã chuyển khoản nhưng chưa kích hoạt | Mở **Thanh toán › Kiểm tra ngay**; vẫn chưa được thì nhắn Zalo **0788962643** kèm mã kích hoạt và thông tin giao dịch để đối chiếu |
 | 🔁 | Đổi máy tính / cài lại Windows | Bản quyền gắn với máy — nhắn Zalo kèm **mã kích hoạt** trên máy mới để được chuyển bản quyền |
-| 🔐 | Bấm **Đăng nhập Google** không thấy mở trang | Bản 8.2.0: bấm lại là mở lại đúng trang đăng nhập (lỡ đóng tab cũng được) |
+| 🔐 | Bấm **Đăng nhập Google** không thấy mở trang | Bấm lại là mở lại đúng trang đăng nhập (lỡ đóng tab cũng được) |
 | ⏳ | "Google Drive đang bận — tự tải tiếp sau N giây" | Bình thường khi nhiều người cùng tải — cứ để app tự chạy; lượt bị ngắt thì mở lại app, bấm **Tải lên** để tải tiếp |
 | 🔄 | Không tự cập nhật | Mạng chặn GitHub — tải bản mới ở **[Releases](https://github.com/mikeTran99/Auto-Link/releases/latest)** rồi chạy đè |
 | 🕒 | "Đồng hồ máy bị lùi" | Chỉnh lại ngày giờ Windows (tự động đồng bộ giờ) rồi mở lại app |
@@ -542,7 +542,7 @@ flowchart LR
 ## 📜 Nhật ký thay đổi
 
 > [!TIP]
-> **Mới nhất — 8.3.0:** **Kiểm tra thể thức NĐ 30/2020** đủ 29 loại văn bản, 6 nhóm kiểm tra, màn **duyệt từng mục / duyệt tất cả**, bản sao `…_dung_the_thuc.docx` + báo cáo Excel; **nhận dạng chữ qua Google Drive** (mặc định tắt). **8.2.0:** **PDF → Mã QR**; **Google Drive chỉ cần đăng nhập Gmail**, tải hàng nghìn file bền khi Google bận, tải tiếp đúng chỗ dừng; **gói 1 / 3 / 6 / 12 tháng**; **bộ cài từng bước** có lối tắt Desktop. **8.1.x:** cập nhật 1 chạm, Đối chiếu dữ liệu, File → Link Google Drive, PDF → Word / Excel chuyển thật.
+> **Mới nhất — 8.3.0:** **Kiểm tra thể thức NĐ 30/2020** đủ 29 loại văn bản, 6 nhóm kiểm tra, màn **duyệt từng mục / duyệt tất cả**, bản sao `…_dung_the_thuc.docx` + báo cáo Excel; **nhận dạng chữ qua Google Drive** (mặc định tắt). **Trước đó:** **PDF → Mã QR**; **Google Drive chỉ cần đăng nhập Gmail**, tải hàng nghìn file bền khi Google bận, tải tiếp đúng chỗ dừng; **gói 1 / 3 / 6 / 12 tháng**; **bộ cài từng bước** có lối tắt Desktop. **8.1.x:** cập nhật 1 chạm, Đối chiếu dữ liệu, File → Link Google Drive, PDF → Word / Excel chuyển thật.
 
 Xem đầy đủ ở **[📜 CHANGELOG.md](CHANGELOG.md)** và **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 
