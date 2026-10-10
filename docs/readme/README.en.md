@@ -20,11 +20,11 @@
   <img alt="English / Vietnamese" src="https://img.shields.io/badge/UI-English%20%2F%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-2563EB?style=flat-square&logo=googletranslate&logoColor=white">
 </p>
 
-> **Current release: [8.2.0 · 8 October 2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.2.0).** New: **PDF → QR code**, **Google Drive with just a Gmail sign-in** (thousands of files, resumes automatically when the network / Google is busy), **1 / 3 / 6 / 12-month plans**, and a **step-by-step installer** with a Desktop shortcut.
+> **Current release: [8.3.0 · 10 October 2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.3.0).** New: a **Decree 30/2020 format checker** (29 document types, review and **approve each fix** or all at once, fixes go to a copy) and **text recognition via Google Drive** (optional — more accurate on blurry scans and accented capitals).
 
 <sub>Illustrative screenshots have account details, private paths and all QR codes redacted. Use the QR shown inside the app for payment. Trial duration and prices follow the configuration displayed in the app.</sub>
 
-<p align="center"><img src="../screenshots/01-file-link-v8.2.0.png" alt="Auto Link" width="92%"></p>
+<p align="center"><img src="../screenshots/01-file-link-v8.3.0.png" alt="Auto Link" width="92%"></p>
 
 ---
 
@@ -146,6 +146,20 @@ New release on GitHub → **one click to update** (signature-checked). **3-day t
 
 ---
 
+## ✅ Decree 30/2020 format check · new in 8.3.0
+
+Pick Word files → the app checks **29 administrative document types** (auto-detected) in **6 groups**: page & margins,
+font & size, paragraphs, the 9 main components, additional components, spelling & punctuation. Each issue is one row
+*current → suggested*: **tick items or Approve all**; items that need a human get clear guidance. Output is a **copy**
+`…_dung_the_thuc.docx` (the original is untouched) plus an Excel report. Unit-specific rules can be imported / exported.
+
+| Document type + check groups | Approve each suggestion |
+|---|---|
+| ![Format check](../screenshots/31-kiem-tra-the-thuc-v8.3.0.png) | ![Review fixes](../screenshots/30-the-thuc-duyet-v8.3.0.png) |
+
+**Text recognition via Google Drive** (Settings › Text recognition › Google — default **This PC**): page images go to
+**your own Drive** and are deleted right away; on network errors the app falls back to Tesseract.
+
 ## ⇄ Reverse functions
 
 Every main function has a **⇄ Reverse** button next to its title that opens the opposite direction:
@@ -160,7 +174,7 @@ Every main function has a **⇄ Reverse** button next to its title that opens th
 
 | 🔗 Extract links | 🏞️ PDF → images + links | 📷 QR code → links |
 |---|---|---|
-| ![Extract](../screenshots/12-dao-trich-xuat-link-v8.2.0.png) | ![PDF images](../screenshots/13-dao-pdf-anh-link-v8.2.0.png) | ![Read QR](../screenshots/14-dao-ma-qr-link-v8.2.0.png) |
+| ![Extract](../screenshots/12-dao-trich-xuat-link-v8.3.0.png) | ![PDF images](../screenshots/13-dao-pdf-anh-link-v8.3.0.png) | ![Read QR](../screenshots/14-dao-ma-qr-link-v8.3.0.png) |
 
 Found links can be sent straight to **Link → QR code** with one click (**“Create QR codes from these links”**).
 
@@ -183,23 +197,23 @@ flowchart LR
 
 | 📝 Word → Hyperlink · options | ⚙️ Processing |
 |---|---|
-| ![Options](../screenshots/02-tuy-chon-v8.2.0.png) | ![Processing](../screenshots/03-xu-ly-v8.2.0.png) |
+| ![Options](../screenshots/02-tuy-chon-v8.3.0.png) | ![Processing](../screenshots/03-xu-ly-v8.3.0.png) |
 | 🔳 **Link → QR code** | ☑️ **Pick links to generate** |
-| ![Link to QR](../screenshots/04-link-qr-v8.2.0.png) | ![Categorise](../screenshots/05-phan-loai-v8.2.0.png) |
+| ![Link to QR](../screenshots/04-link-qr-v8.3.0.png) | ![Categorise](../screenshots/05-phan-loai-v8.3.0.png) |
 | 🗂️ **QR history** | 🧰 **37 tools · accordion groups** |
-| ![History](../screenshots/06-lich-su-v8.2.0.png) | ![Tools](../screenshots/07-cong-cu-v8.2.0.png) |
+| ![History](../screenshots/06-lich-su-v8.3.0.png) | ![Tools](../screenshots/07-cong-cu-v8.3.0.png) |
 | ⚡ **Batch processing** | 🗄️ **Records digitisation** |
-| ![Batch](../screenshots/08-xu-ly-hang-loat-v8.2.0.png) | ![Digitise](../screenshots/09-so-hoa-v8.2.0.png) |
+| ![Batch](../screenshots/08-xu-ly-hang-loat-v8.3.0.png) | ![Digitise](../screenshots/09-so-hoa-v8.3.0.png) |
 | ⚙️ **Settings** | 🌙 **Dark theme — Obsidian · Gold** |
-| ![Settings](../screenshots/10-cai-dat-v8.2.0.png) | ![Dark theme](../screenshots/11-giao-dien-toi-v8.2.0.png) |
+| ![Settings](../screenshots/10-cai-dat-v8.3.0.png) | ![Dark theme](../screenshots/11-giao-dien-toi-v8.3.0.png) |
 | 🌌 **Glass · Aurora** | 🌈 **Next-Gen · Holo** |
-| ![Glass Aurora](../screenshots/16-chu-de-glass-aurora-v8.2.0.png) | ![Holo](../screenshots/18-chu-de-holo-v8.2.0.png) |
+| ![Glass Aurora](../screenshots/16-chu-de-glass-aurora-v8.3.0.png) | ![Holo](../screenshots/18-chu-de-holo-v8.3.0.png) |
 | ☁️ **Neumorphism · Light** | 🌐 **English interface** |
-| ![Neumorphism](../screenshots/17-chu-de-neumorphism-v8.2.0.png) | ![English](../screenshots/21-english-v8.2.0.png) |
+| ![Neumorphism](../screenshots/17-chu-de-neumorphism-v8.3.0.png) | ![English](../screenshots/21-english-v8.3.0.png) |
 | ☁️ **File → Google Drive link** — thousands of files, resumes where it stopped | 🔐 **Google sign-in — just your Gmail** (no Client ID / secret) |
-| ![Google Drive](../screenshots/25-file-link-drive-v8.2.0.png) | ![Sign in](../screenshots/29-dang-nhap-google-v8.2.0.png) |
+| ![Google Drive](../screenshots/25-file-link-drive-v8.3.0.png) | ![Sign in](../screenshots/29-dang-nhap-google-v8.3.0.png) |
 | 📄 **PDF → QR code** · new in 8.2.0 | 🔄 **Data reconciliation** |
-| ![PDF to QR](../screenshots/26-pdf-ma-qr-v8.2.0.png) | ![Reconcile](../screenshots/27-doi-chieu-v8.2.0.png) |
+| ![PDF to QR](../screenshots/26-pdf-ma-qr-v8.3.0.png) | ![Reconcile](../screenshots/27-doi-chieu-v8.3.0.png) |
 
 | Group | Tools |
 |---|---|
@@ -242,7 +256,7 @@ After the 3-day trial, processing features require **Pro** — the app shows an 
 
 **Renewal:** pay for the next plan using the same Gmail, PC and transfer note. The admin tool can carry over remaining time for early renewals; the app receives the new license and expiry date after approval. Activation currently uses owner confirmation and does not automatically reconcile bank transactions.
 
-<p align="center"><img src="../screenshots/28-thanh-toan-combo-v8.2.0.png" alt="License & payment" width="72%"></p>
+<p align="center"><img src="../screenshots/28-thanh-toan-combo-v8.3.0.png" alt="License & payment" width="72%"></p>
 
 ## 📞 Contact & support
 

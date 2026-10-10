@@ -34,11 +34,11 @@
   <a href="#-nhật-ký-thay-đổi">📜 Thay đổi</a>
 </p>
 
-> **Bản phát hành hiện tại: [8.2.0 · 08/10/2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.2.0).** Mới: **PDF → Mã QR**, **Google Drive chỉ cần đăng nhập Gmail** (tải hàng nghìn file, tự tải tiếp khi mạng / Google bận), **gói 1 / 3 / 6 / 12 tháng**, **bộ cài từng bước** có lối tắt Desktop.
+> **Bản phát hành hiện tại: [8.3.0 · 10/10/2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.3.0).** Mới: **Kiểm tra thể thức theo Nghị định 30/2020** (29 loại văn bản, xem và **duyệt từng sửa đổi** hoặc duyệt tất cả, sửa trên bản sao) và **nhận dạng chữ qua Google Drive** (tuỳ chọn — chính xác hơn với scan mờ, chữ in hoa nhiều dấu).
 
 <sub>Ảnh minh họa đã che thông tin tài khoản, đường dẫn riêng và toàn bộ mã QR. QR thanh toán thực tế nằm trong ứng dụng; thời gian dùng thử và giá áp dụng theo cấu hình hiển thị trong app.</sub>
 
-<p align="center"><img src="docs/screenshots/01-file-link-v8.2.0.png" alt="Giao diện Auto Link" width="92%"></p>
+<p align="center"><img src="docs/screenshots/01-file-link-v8.3.0.png" alt="Giao diện Auto Link" width="92%"></p>
 
 ---
 
@@ -265,13 +265,13 @@ flowchart LR
 
 | 1️⃣ Chọn dữ liệu | 2️⃣ Tuỳ chọn |
 |---|---|
-| ![Bước 1](docs/screenshots/01-file-link-v8.2.0.png) | ![Bước 2](docs/screenshots/02-tuy-chon-v8.2.0.png) |
+| ![Bước 1](docs/screenshots/01-file-link-v8.3.0.png) | ![Bước 2](docs/screenshots/02-tuy-chon-v8.3.0.png) |
 
 - 🔎 **Quét mã QR trong bảng** — giải mã ảnh QR trong bảng và điền link vào ô kế bên.
 - ➕ **Thêm link mới vào cuối file** — chèn phần liên kết dịch vụ công (địa chỉ + chữ hiển thị tuỳ chọn).
 - 📄 **Định dạng đầu ra** — PDF và Word / chỉ PDF / chỉ Word · **Khổ giấy**: A4 dọc, A4 ngang, A3 dọc, theo mẫu Word.
 
-<p align="center"><img src="docs/screenshots/03-xu-ly-v8.2.0.png" alt="Bước 3 — Xử lý" width="85%"></p>
+<p align="center"><img src="docs/screenshots/03-xu-ly-v8.3.0.png" alt="Bước 3 — Xử lý" width="85%"></p>
 
 **3️⃣ Xử lý:** tiến độ từng file, nhật ký chi tiết có ô tích, **📂 Mở thư mục kết quả** và **↩️ Khôi phục** cả lượt.
 
@@ -281,7 +281,7 @@ Chọn file mọi loại hoặc cả thư mục (gồm thư mục con) → **T�
 
 | Nhánh Link Google Drive | Đăng nhập — chỉ cần Gmail |
 |---|---|
-| ![File → Link Google Drive](docs/screenshots/25-file-link-drive-v8.2.0.png) | ![Đăng nhập Google](docs/screenshots/29-dang-nhap-google-v8.2.0.png) |
+| ![File → Link Google Drive](docs/screenshots/25-file-link-drive-v8.3.0.png) | ![Đăng nhập Google](docs/screenshots/29-dang-nhap-google-v8.3.0.png) |
 
 - 🔐 Chỉ xin quyền `drive.file`: app **chỉ thấy file do chính nó tải lên**, không đọc Drive của bạn. Nhiều tài khoản Google, chọn / tạo thư mục đích, xem dung lượng.
 - ⏳ Nhiều người cùng tải: Google báo bận → app **tự chờ rồi tải tiếp** + **tự điều tốc**; tắt app / mất mạng → mở lại báo "Còn N file", bấm **Tải lên** chỉ tải phần còn lại. **Bỏ danh sách** để xoá.
@@ -305,13 +305,13 @@ flowchart LR
     classDef pink fill:#EC4899,stroke:#BE185D,color:#fff
 ```
 
-![Link → Mã QR](docs/screenshots/04-link-qr-v8.2.0.png)
+![Link → Mã QR](docs/screenshots/04-link-qr-v8.3.0.png)
 
 - 🌐 **Cào link bám đúng trang đã dán** — Cổng DVC Quốc gia: trang chủ, nhóm dịch vụ, Dịch vụ công trực tuyến, Tra cứu thủ tục, Thủ tục liên thông; xếp thư mục như trên Cổng (lĩnh vực, cơ quan, đối tượng…). Trang khác: link ở nội dung chính, bỏ menu / đầu / chân trang.
 - 💾 Trang chặn trình duyệt tự động: lưu trang (**Ctrl+S**) rồi bấm **Mở trang đã lưu**.
 - ☑️ **Tích từng link hoặc cả thư mục** — chỉ tạo mã cho link đã chọn; danh sách trên 500 link không tự chọn hết để tránh nặng máy.
 
-![Phân loại link](docs/screenshots/05-phan-loai-v8.2.0.png)
+![Phân loại link](docs/screenshots/05-phan-loai-v8.3.0.png)
 
 > [!TIP]
 > Gõ **không dấu** vẫn tìm ra (`ho tich` → *Hộ tịch*). Đặt `[Tên thư mục]` ở một dòng riêng phía trên nhóm link để tự xếp mã QR vào thư mục con.
@@ -336,21 +336,35 @@ Từ danh mục thủ tục của đơn vị, tạo bộ tra cứu để đặt 
 
 Trang kiosk đã xuất có thể tra cứu khi mất mạng; bước đối chiếu Cổng DVC và mở trang thủ tục cần Internet. Khi danh mục thay đổi, chạy lại công cụ để cập nhật bộ tra cứu.
 
+### ✅ Kiểm tra thể thức NĐ 30/2020 · mới 8.3.0
+
+Chọn file Word → app soát **29 loại văn bản hành chính** (tự nhận biết loại) theo **6 nhóm**: trang & lề, phông & cỡ chữ,
+đoạn văn, 9 thành phần chính, thành phần bổ sung, chính tả & dấu câu. Mỗi lỗi là 1 dòng *hiện tại → đề xuất*: **tích
+từng mục hoặc Duyệt tất cả**; mục cần sửa tay ghi rõ hướng dẫn. Kết quả là **bản sao** `…_dung_the_thuc.docx` (file gốc
+giữ nguyên) + báo cáo Excel. Quy tắc riêng của đơn vị (cỡ chữ, lề…) nhập / xuất được.
+
+| Chọn loại văn bản + nhóm kiểm tra | Duyệt từng đề xuất |
+|---|---|
+| ![Kiểm tra thể thức](docs/screenshots/31-kiem-tra-the-thuc-v8.3.0.png) | ![Duyệt sửa thể thức](docs/screenshots/30-the-thuc-duyet-v8.3.0.png) |
+
+**Nhận dạng chữ qua Google Drive** (Cài đặt › Nhận dạng chữ › Google — mặc định **Máy này**): scan mờ, chữ IN HOA nhiều
+dấu đọc chính xác hơn; ảnh từng trang lên **Drive của chính bạn** rồi xoá ngay, lỗi mạng thì tự dùng Tesseract.
+
 ### 📄 PDF → Mã QR · mới trong 8.2.0
 
 Mã QR chỉ chứa ~3 KB nên không chứa nổi cả file: **Bộ công cụ › Link & Mã QR › PDF → Mã QR** → **Chọn file PDF** / **Chọn thư mục PDF** → app tải lên Google Drive của bạn (ai có link đều xem) rồi tạo **mỗi file 1 mã QR** theo Thiết kế mã QR, giữ cây thư mục. Lần đầu chỉ cần đăng nhập Gmail.
 
-<p align="center"><img src="docs/screenshots/26-pdf-ma-qr-v8.2.0.png" alt="PDF → Mã QR" width="60%"></p>
+<p align="center"><img src="docs/screenshots/26-pdf-ma-qr-v8.3.0.png" alt="PDF → Mã QR" width="60%"></p>
 
 ### 🔄 Đối chiếu dữ liệu
 
 Giữ danh mục TTHC luôn đúng: chọn **nguồn cố định** (file Excel hoặc link Google Sheet / Drive) + **văn bản cần cập nhật** (Quyết định công bố PDF / Word, danh mục Excel / CSV) → app tự phân loại thủ tục về đúng nguồn, so chính xác theo mã → xem lại từng dòng **thêm / bỏ / sửa** → **Duyệt cập nhật** (thử ghi trên bản sao, kiểm lại từng dòng rồi mới ghi).
 
-![Đối chiếu dữ liệu](docs/screenshots/27-doi-chieu-v8.2.0.png)
+![Đối chiếu dữ liệu](docs/screenshots/27-doi-chieu-v8.3.0.png)
 
 ### 🗂️ Lịch sử mã QR & Nhật ký xử lý
 
-![Lịch sử mã QR](docs/screenshots/06-lich-su-v8.2.0.png)
+![Lịch sử mã QR](docs/screenshots/06-lich-su-v8.3.0.png)
 
 Lưu **vĩnh viễn** mọi mã đã tạo: 🔍 tìm kiếm · ☑️ tích chọn · 📋 sao chép link · 🔳 mở mã / 📂 thư mục · 🗑️ xoá (có sao lưu) · ↩️ **khôi phục** mục vừa xoá.
 
@@ -383,7 +397,7 @@ flowchart LR
 
 | 🔗 Trích xuất link | 🏞️ PDF → Ảnh + link | 📷 Mã QR → Link |
 |---|---|---|
-| ![Trích xuất link](docs/screenshots/12-dao-trich-xuat-link-v8.2.0.png) | ![PDF → Ảnh + link](docs/screenshots/13-dao-pdf-anh-link-v8.2.0.png) | ![Mã QR → Link](docs/screenshots/14-dao-ma-qr-link-v8.2.0.png) |
+| ![Trích xuất link](docs/screenshots/12-dao-trich-xuat-link-v8.3.0.png) | ![PDF → Ảnh + link](docs/screenshots/13-dao-pdf-anh-link-v8.3.0.png) | ![Mã QR → Link](docs/screenshots/14-dao-ma-qr-link-v8.3.0.png) |
 
 > [!TIP]
 > Trích hoặc đọc được link thì bấm **“Tạo mã QR từ các link này”** — danh sách sang thẳng **Link → Mã QR** (giữ nhãn, bỏ link trùng) để phân loại và tạo mã mới.
@@ -392,7 +406,7 @@ flowchart LR
 
 ## 🧰 Bộ công cụ — 37 công cụ · 5 nhóm
 
-![Bộ công cụ](docs/screenshots/07-cong-cu-v8.2.0.png)
+![Bộ công cụ](docs/screenshots/07-cong-cu-v8.3.0.png)
 
 | Nhóm | Công cụ |
 |---|---|
@@ -406,7 +420,7 @@ Các nhóm **thu gọn sẵn** — bấm tên nhóm để mở (nhóm khác tự
 
 | ⚡ Xử lý hàng loạt | 🗄️ Số hóa hồ sơ |
 |---|---|
-| ![Xử lý hàng loạt](docs/screenshots/08-xu-ly-hang-loat-v8.2.0.png) | ![Số hóa hồ sơ](docs/screenshots/09-so-hoa-v8.2.0.png) |
+| ![Xử lý hàng loạt](docs/screenshots/08-xu-ly-hang-loat-v8.3.0.png) | ![Số hóa hồ sơ](docs/screenshots/09-so-hoa-v8.3.0.png) |
 
 Mỗi công cụ báo kết quả kèm **📄 Mở file / 📂 Mở thư mục**, **🔁 Xử lý tiếp** và **↩️ Khôi phục**; mọi thao tác ghi vào **Nhật ký xử lý**.
 
@@ -416,21 +430,21 @@ Mỗi công cụ báo kết quả kèm **📄 Mở file / 📂 Mở thư mục**
 
 | ⚙️ Cài đặt | 🌙 Giao diện tối — Obsidian · Gold |
 |---|---|
-| ![Cài đặt](docs/screenshots/10-cai-dat-v8.2.0.png) | ![Giao diện tối](docs/screenshots/11-giao-dien-toi-v8.2.0.png) |
+| ![Cài đặt](docs/screenshots/10-cai-dat-v8.3.0.png) | ![Giao diện tối](docs/screenshots/11-giao-dien-toi-v8.3.0.png) |
 
 🎨 **8 chủ đề** (bấm ô màu là đổi) · 🔣 **5 bộ icon** · ✨ hiệu ứng chuyển động · 🌐 ngôn ngữ Tiếng Việt / English · 👤 tài khoản & bản quyền · 📁 Thư mục mã QR / dự án · ✅ Kiểm tra hệ thống · 🧾 Nhật ký lỗi · 💾 Sao lưu / khôi phục (chuyển máy) · 🔄 Cập nhật phần mềm · ⌨️ Phím tắt **Ctrl+N / Ctrl+S / Ctrl+O**, **Tab / Shift+Tab**, **Enter / Space**, **Esc**.
 
 | 🌌 Glass · Aurora | ☁️ Neumorphism · Sáng | 🌈 Next-Gen · Holo |
 |---|---|---|
-| ![Glass Aurora](docs/screenshots/16-chu-de-glass-aurora-v8.2.0.png) | ![Neumorphism](docs/screenshots/17-chu-de-neumorphism-v8.2.0.png) | ![Holo](docs/screenshots/18-chu-de-holo-v8.2.0.png) |
+| ![Glass Aurora](docs/screenshots/16-chu-de-glass-aurora-v8.3.0.png) | ![Neumorphism](docs/screenshots/17-chu-de-neumorphism-v8.3.0.png) | ![Holo](docs/screenshots/18-chu-de-holo-v8.3.0.png) |
 
-<p align="center"><img src="docs/screenshots/21-english-v8.2.0.png" alt="Giao diện tiếng Anh" width="70%"><br><sub>Nút <b>EN / VI</b>: cả giao diện sang tiếng Anh ngay lập tức</sub></p>
+<p align="center"><img src="docs/screenshots/21-english-v8.3.0.png" alt="Giao diện tiếng Anh" width="70%"><br><sub>Nút <b>EN / VI</b>: cả giao diện sang tiếng Anh ngay lập tức</sub></p>
 
 ---
 
 ### 🖥️ Mọi màn hình, mọi thiết bị
 
-<p align="center"><img src="docs/screenshots/15-thu-gon-v8.2.0.png" alt="Cửa sổ hẹp: menu thu gọn" width="62%"></p>
+<p align="center"><img src="docs/screenshots/15-thu-gon-v8.3.0.png" alt="Cửa sổ hẹp: menu thu gọn" width="62%"></p>
 
 Cửa sổ hẹp (Snap nửa màn hình, máy tính bảng): menu trái thu thành **cột icon** (rê chuột / Tab hiện tên), hàng nút **tự xuống dòng**, trang dài **cuộn được**, nút chính luôn ghim đáy; hộp thoại không vượt quá màn hình. Được kiểm thử tự động trên 8 loại màn hình: HD 100 / 125 %, 1024 × 768, máy tính bảng 1280 × 800 150 %, Full HD 150 / 175 %, 2K 200 %, 4K 250 %.
 
@@ -470,7 +484,7 @@ flowchart LR
 
 **Gia hạn:** thanh toán gói tiếp theo với đúng Gmail, máy và nội dung chuyển khoản. Công cụ quản trị có thể cộng thời gian còn lại khi gia hạn sớm; app tự nhận giấy phép mới và cập nhật ngày hết hạn sau khi được duyệt. Hiện dùng bước xác nhận của chủ sản phẩm, chưa tự đối soát giao dịch ngân hàng.
 
-<p align="center"><img src="docs/screenshots/28-thanh-toan-combo-v8.2.0.png" alt="Bản quyền & thanh toán — 4 gói" width="72%"></p>
+<p align="center"><img src="docs/screenshots/28-thanh-toan-combo-v8.3.0.png" alt="Bản quyền & thanh toán — 4 gói" width="72%"></p>
 
 > [!NOTE]
 > Mua cho **cả cơ quan / nhiều máy**, xuất hoá đơn, đổi máy tính: liên hệ Zalo **0788962643**.
@@ -528,7 +542,7 @@ flowchart LR
 ## 📜 Nhật ký thay đổi
 
 > [!TIP]
-> **Mới nhất — 8.2.0:** **PDF → Mã QR**; **Google Drive chỉ cần đăng nhập Gmail**, tải hàng nghìn file bền khi Google bận, tải tiếp đúng chỗ dừng; **gói 1 / 3 / 6 / 12 tháng**; **bộ cài từng bước** có lối tắt Desktop. **8.1.x:** cập nhật 1 chạm, Đối chiếu dữ liệu, File → Link Google Drive, PDF → Word / Excel chuyển thật.
+> **Mới nhất — 8.3.0:** **Kiểm tra thể thức NĐ 30/2020** đủ 29 loại văn bản, 6 nhóm kiểm tra, màn **duyệt từng mục / duyệt tất cả**, bản sao `…_dung_the_thuc.docx` + báo cáo Excel; **nhận dạng chữ qua Google Drive** (mặc định tắt). **8.2.0:** **PDF → Mã QR**; **Google Drive chỉ cần đăng nhập Gmail**, tải hàng nghìn file bền khi Google bận, tải tiếp đúng chỗ dừng; **gói 1 / 3 / 6 / 12 tháng**; **bộ cài từng bước** có lối tắt Desktop. **8.1.x:** cập nhật 1 chạm, Đối chiếu dữ liệu, File → Link Google Drive, PDF → Word / Excel chuyển thật.
 
 Xem đầy đủ ở **[📜 CHANGELOG.md](CHANGELOG.md)** và **[🏷️ Releases](https://github.com/mikeTran99/Auto-Link/releases)**.
 
