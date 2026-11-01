@@ -21,7 +21,7 @@
   <img alt="English / Vietnamese" src="https://img.shields.io/badge/UI-English%20%2F%20Ti%E1%BA%BFng%20Vi%E1%BB%87t-2563EB?style=flat-square&logo=googletranslate&logoColor=white">
 </p>
 
-> **Current release: [8.6.0 · 1 November 2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.6.0).** New: a **macOS build** (Apple silicon and Intel), **sign in with any email** (Gmail, work email, `.edu.vn`), a **7-day trial** followed by a **free tier**, an **Education plan at 50 % off**, **multi-PC organisation licenses**, **certificates with anti-counterfeit verification QR codes**, a **multi-purpose kiosk**, **AI image upscaling** with bundled models and **progress bars with %** in every tool.
+> **Current release: [8.6.1 · 1 November 2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.6.1).** New in 8.6.1: **AI image upscaling** lets you choose **CPU / GPU** (graphics card detected automatically), **Open file / Open folder** buttons for each finished image, and failed images show the **reason** with a **Retry** button. Since 8.6.0: a **macOS build** (Apple silicon and Intel), **sign in with any email** (Gmail, work email, `.edu.vn`), a **7-day trial** followed by a **free tier**, an **Education plan at 50 % off**, **multi-PC organisation licenses**, **certificates with anti-counterfeit verification QR codes**, a **multi-purpose kiosk**, **AI image upscaling** with bundled models and **progress bars with %** in every tool.
 
 <sub>Illustrative screenshots have account details, private paths and all QR codes redacted. Use the QR shown inside the app for payment. Trial duration and prices follow the configuration displayed in the app.</sub>
 
@@ -320,7 +320,7 @@ After the 7-day trial the app switches to the **free tier**; other features requ
 | | Channel | |
 |:-:|---|---|
 | 💬 | **Zalo / phone** | **[0788962643](https://zalo.me/0788962643)** — setup help, licenses, bug reports, office-wide purchases |
-| 🌐 | **Website** | **[mechamike.vercel.app](https://mechamike.vercel.app/)** |
+| 🌐 | **Website** | **[mikesmart.vercel.app](https://mikesmart.vercel.app/)** |
 
 <p align="center"><img src="../screenshots/20-lien-he-v8.0.1.png" alt="Contact" width="72%"></p>
 

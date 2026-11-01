@@ -35,7 +35,7 @@
   <a href="#-nhật-ký-thay-đổi">📜 Thay đổi</a>
 </p>
 
-> **Bản phát hành hiện tại: [8.6.0 · 01/11/2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.6.0).** Mới: **bản cho máy Mac** (chip Apple và Intel), **đăng nhập bằng mọi email** (Gmail, email cơ quan, `.edu.vn`), **dùng thử 7 ngày** rồi vẫn dùng **bản miễn phí**, **gói Giáo dục giảm 50 %**, **bản quyền đơn vị nhiều máy**, **giấy tờ có mã QR xác thực chống giả**, **Kiosk đa năng**, **Nâng cấp ảnh AI** cài sẵn mô hình và **thanh tiến trình %** ở mọi công cụ.
+> **Bản phát hành hiện tại: [8.6.1 · 01/11/2026](https://github.com/mikeTran99/Auto-Link/releases/tag/v8.6.1).** Mới ở 8.6.1: **Nâng cấp ảnh** cho chọn **CPU / GPU** (tự dò card đồ hoạ), nút **Mở file / Mở thư mục** cho từng ảnh xong, ảnh lỗi ghi **lý do** kèm nút **Thử lại**. Từ 8.6.0: **bản cho máy Mac** (chip Apple và Intel), **đăng nhập bằng mọi email** (Gmail, email cơ quan, `.edu.vn`), **dùng thử 7 ngày** rồi vẫn dùng **bản miễn phí**, **gói Giáo dục giảm 50 %**, **bản quyền đơn vị nhiều máy**, **giấy tờ có mã QR xác thực chống giả**, **Kiosk đa năng**, **Nâng cấp ảnh AI** cài sẵn mô hình và **thanh tiến trình %** ở mọi công cụ.
 
 <sub>Ảnh minh họa đã che thông tin tài khoản, đường dẫn riêng và toàn bộ mã QR. QR thanh toán thực tế nằm trong ứng dụng; thời gian dùng thử và giá áp dụng theo cấu hình hiển thị trong app.</sub>
 
@@ -582,7 +582,7 @@ flowchart LR
 | | Kênh | |
 |:-:|---|---|
 | 💬 | **Zalo / điện thoại** | **[0788962643](https://zalo.me/0788962643)** — hỗ trợ cài đặt, mua bản quyền, báo lỗi |
-| 🌐 | **Website** | **[mechamike.vercel.app](https://mechamike.vercel.app/)** |
+| 🌐 | **Website** | **[mikesmart.vercel.app](https://mikesmart.vercel.app/)** |
 | 🐞 | **Báo lỗi** | Gửi kèm **⚙️ Cài đặt › 🧾 Nhật ký lỗi** qua Zalo |
 
 <p align="center"><img src="docs/screenshots/20-lien-he-v8.0.1.png" alt="Liên hệ & ủng hộ" width="72%"><br><sub>Nút <b>Thanh toán · Zalo · Website</b> có sẵn trên thanh đầu của app</sub></p>

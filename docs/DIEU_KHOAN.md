@@ -60,7 +60,7 @@ dụng sau khi cập nhật nghĩa là bạn đồng ý với điều khoản m�
 ## 7. Liên hệ
 
 - Zalo / điện thoại: **[0788962643](https://zalo.me/0788962643)**
-- Website: **[mechamike.vercel.app](https://mechamike.vercel.app/)**
+- Website: **[mikesmart.vercel.app](https://mikesmart.vercel.app/)**
 
 ---
 
@@ -79,4 +79,4 @@ dụng sau khi cập nhật nghĩa là bạn đồng ý với điều khoản m�
   scraping (when you click). No ads, no selling or sharing of data. Ask us to view, correct or delete your data.
 - **Liability:** provided "as is"; check results before issuing documents; liability capped at the fee paid for the
   current plan.
-- **Contact:** Zalo 0788962643 · [mechamike.vercel.app](https://mechamike.vercel.app/)
+- **Contact:** Zalo 0788962643 · [mikesmart.vercel.app](https://mikesmart.vercel.app/)

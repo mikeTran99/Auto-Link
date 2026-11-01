@@ -1,5 +1,14 @@
 # Nhật ký thay đổi — Auto Link
 
+## 8.6.1 — 01/11/2026
+**Nâng cấp ảnh: chọn CPU / GPU, mở kết quả, báo lỗi + Thử lại**
+- Mục mới **Thiết bị xử lý**: **Tự động** (mặc định) · **GPU** · **CPU**. App tự dò card đồ hoạ và ghi rõ máy có GPU nào;
+  Tự động dùng GPU khi chạy đúng và không chậm hơn CPU. GPU lỗi driver giữa chừng → tự chuyển CPU làm lại ảnh đó.
+- Ảnh xong: **Mở file** · **Mở thư mục** ngay trên từng dòng (bấm đúp dòng cũng mở ảnh); nút **Mở ảnh đã chọn**,
+  **Mở thư mục ảnh**.
+- Ảnh lỗi: ghi **lý do dễ hiểu** kèm cách khắc phục (hết bộ nhớ, mất tệp gốc, ổ đầy, tệp không phải ảnh…) và nút
+  **Thử lại** — chỉ chạy lại ảnh lỗi, ảnh đã xong giữ nguyên.
+
 ## 8.6.0 — 01/11/2026
 **Mới: bản cho máy Mac** — `Auto-Link-mac-arm64.dmg` (chip Apple M1 – M4) · `Auto-Link-mac-x86_64.dmg` (chip Intel), macOS 11
 trở lên: kéo thả vào Applications, kèm sẵn 4 mô hình Nâng cấp ảnh, đăng nhập / giấy phép như bản Windows. Lần đầu mở:
@@ -246,7 +255,7 @@ nhanh tự mở nhóm có kết quả.
 - 5 bộ icon đổi tại chỗ: Fluent, Fluent màu, Cổ điển, Emoji, Nét mảnh.
 - Hiệu ứng chuyển động (tắt được): nhóm trượt mở, thông báo trượt vào, gợn sóng khi bấm nút, vạch sáng khi chuyển trang.
 - Nút **EN / VI** trên thanh đầu: đổi toàn bộ giao diện Tiếng Việt ⇄ English ngay (dữ liệu, tên file giữ nguyên).
-- Thanh đầu có nút **Thanh toán** (mã VietQR ngân hàng), **Zalo** 0788962643 (mã QR), **Website** mechamike.vercel.app.
+- Thanh đầu có nút **Thanh toán** (mã VietQR ngân hàng), **Zalo** 0788962643 (mã QR), **Website** mikesmart.vercel.app.
 
 **Bản quyền & thanh toán** (chỉ áp dụng ở bản `Auto_Link.exe`)
 - Đăng nhập Gmail (có thể thêm đăng nhập Google qua trình duyệt — OAuth PKCE — khi chủ sản phẩm cấu hình).
