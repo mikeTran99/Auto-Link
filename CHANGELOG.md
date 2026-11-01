@@ -1,5 +1,70 @@
 # Nhật ký thay đổi — Auto Link
 
+## 8.6.0 — 01/11/2026
+**Mới: bản cho máy Mac** — `Auto-Link-mac-arm64.dmg` (chip Apple M1 – M4) · `Auto-Link-mac-x86_64.dmg` (chip Intel), macOS 11
+trở lên: kéo thả vào Applications, kèm sẵn 4 mô hình Nâng cấp ảnh, đăng nhập / giấy phép như bản Windows. Lần đầu mở:
+Cài đặt hệ thống › Quyền riêng tư & Bảo mật › **Vẫn mở**. Trên Mac không có Word / Excel / PowerPoint → PDF; in qua Xem
+trước (⌘P); OCR cần `brew install tesseract tesseract-lang`; có bản mới thì app mở trang tải.
+
+**Dùng thử, gói và bản quyền đơn vị**
+- **Đăng nhập bằng mọi email**: Gmail, email cơ quan, `.edu.vn`… (trước chỉ Gmail).
+- **Dùng thử 7 ngày** (trước 3 ngày). Hết dùng thử → **bản miễn phí**: Xem & in, Nối, Tách, Xoay PDF, 5 lượt / ngày.
+- **Gói Pro 12 tháng · Giáo dục giảm 50 %** (245.000đ) cho email `.edu.vn` đăng nhập bằng Google.
+- **Bản quyền đơn vị nhiều máy**: Phòng ban (5 máy), Đơn vị (20 máy), Toàn trường / Doanh nghiệp. Mỗi máy dán **mã đơn vị
+  DV…** trên trang Bản quyền & thanh toán → **Gắn máy**; máy mới được thêm là tự kích hoạt.
+- Nút **Thanh toán** trên thanh đầu mở thẳng trang Bản quyền & thanh toán.
+
+**Mới: giấy tờ có mã QR xác thực chống giả** (Trộn văn bản): mỗi giấy chứng nhận / thẻ dự thi có 1 mã ngẫu nhiên in kèm
+QR và 1 trang tra cứu tĩnh để đăng lên web đơn vị — quét là biết "✓ Giấy tờ hợp lệ"; dữ liệu trên trang được mã hoá theo
+từng giấy. Kèm sổ danh sách mã và nút **Tạo mẫu giấy chứng nhận có QR**.
+
+**Kiosk đa năng**: loại danh mục **Dịch vụ / quy trình nội bộ** (trường học, doanh nghiệp), **Tải file mẫu**, **Màu chủ đạo**
+(5 màu), **Logo đơn vị**.
+
+**Nâng cấp ảnh**: **4 mô hình cài sẵn** trong bộ cài; chỉ dùng GPU khi thật sự nhanh hơn CPU, app không đơ khi đang chạy;
+báo **"còn khoảng N phút"**; mặc định mô hình **Nhanh – nét** hợp máy không có card đồ hoạ.
+
+**Thanh tiến trình + %** ở mọi hộp công cụ và trang Nâng cấp ảnh.
+
+## 8.5.0 — 30/10/2026
+**Mới: Nâng cấp ảnh bằng AI** (menu trái): phóng ảnh 2x – 8x vẫn nét bằng Real-ESRGAN, chạy hoàn toàn trên máy (GPU nếu
+có, không thì CPU). 4 mô hình: Tiêu chuẩn, Nhẹ – nhanh, Nghệ thuật số, Trung thực cao. Chọn tỉ lệ, định dạng (theo ảnh gốc
+/ PNG / JPG / WEBP), nơi lưu, đuôi tên; bảng tiến độ từng ảnh; Dừng / làm tiếp; không ghi đè ảnh gốc, giữ nền trong suốt.
+
+## 8.4.1 — 28/10/2026
+- **Mới: PDF → PowerPoint**: mỗi trang thành 1 slide giống hệt bản gốc, chữ đặt đúng chỗ, sửa được; không cần cài
+  PowerPoint. Tổng 43 công cụ.
+- **Kiosk tra cứu chuyên nghiệp hơn**: chỉ dẫn "Quét mã này" / "Bấm vào đây", mở thủ tục ở tab mới, đồng hồ + ngày,
+  hướng dẫn 3 bước, màn chờ "Chạm vào màn hình để tra cứu"; chạy tốt màn ngang, **màn dọc 1080×1920**, máy tính bảng.
+
+## 8.4.0 — 28/10/2026
+- **Mới: Quản lý văn bản đến / đi theo NĐ 30/2020**: đọc số ký hiệu, ngày, cơ quan, trích yếu từ PDF / Word / ảnh scan;
+  số đến / số đi tự cấp, **ký hiệu tự lập** đúng Phụ lục III; sổ theo năm (sổ mật riêng); giao xử lý, hạn, **quá hạn hiện
+  đỏ**; thùng rác, nhật ký; nhập sổ Excel / CSV; xuất sổ Phụ lục IV ra Excel, Word, PDF, CSV; sao lưu / phục hồi .zip.
+- **Mới: Xem & sửa PDF**: ảnh thu nhỏ, tìm chữ không dấu, in (chọn máy in, phạm vi trang — không đổi máy in mặc định),
+  chèn chữ tiếng Việt và chữ ký, lưu bản sửa ra file mới; panel 21 công cụ PDF. Thêm Ký tên PDF, So sánh PDF.
+- **Ô "Tìm chức năng"** trên thanh đầu (Ctrl+F), gõ không dấu hoặc tiếng Anh.
+- **Tab Kiosk** riêng: nguồn Excel / CSV, Google Sheet hoặc link 1 trang Cổng DVC; mở toàn màn hình; **trình chiếu bất kỳ
+  file nào** bằng Edge chế độ kiosk.
+- **Thanh toán tự kích hoạt**: quét VietQR → tiền về → bản quyền tự kích hoạt sau 1 – 2 phút, không cần gửi Zalo; gia hạn
+  cộng dồn. Bản mới hiện hộp **"Có gì mới"**.
+- Menu trái và nhóm công cụ xếp theo quy trình một cửa: **Tiếp nhận & xử lý → Trả kết quả → Theo dõi → Hệ thống**.
+- Cài đặt › **Xoá dữ liệu của tôi trên máy này**; ô đồng ý Điều khoản khi đăng nhập; tăng tương phản, nhãn cho nút icon.
+
+## 8.3.2 — 23/10/2026
+- Sửa lỗi "Không kiểm tra được bản mới: máy chủ trả lỗi 403" khi nhiều máy cùng cơ quan dùng chung mạng.
+
+## 8.3.1 — 23/10/2026
+- **PDF → Word** giữ bố cục tốt hơn (2 cột, căn lề, phông, cỡ chữ), không còn treo Word; PDF scan được chỉnh thẳng và
+  OCR trước khi dựng; không bao giờ dừng giữa chừng.
+- **OCR tiếng Việt chính xác hơn** (đo trên phiếu scan thật: từ đúng 94,4 % → 97,1 %).
+- Rà soát và sửa lỗi ở mọi chức năng chính và 37 công cụ; mã hoá PDF chuyển sang **AES-256**.
+
+## 8.3.0 — 10/10/2026
+- **Mới: Kiểm tra thể thức theo NĐ 30/2020**: 29 loại văn bản, 6 nhóm kiểm tra, duyệt từng sửa đổi hoặc duyệt tất cả,
+  kết quả là bản sao + báo cáo Excel.
+- **Nhận dạng chữ qua Google Drive** (tuỳ chọn trong Cài đặt, mặc định dùng Tesseract trên máy).
+
 ## 8.2.0 — 08/10/2026
 **Mới: PDF → Mã QR** (Bộ công cụ › Link & Mã QR) — file PDF trong máy thành mã QR quét là mở file
 - Mã QR chỉ chứa ~3 KB nên app tải PDF lên Google Drive của người dùng (ai có link đều xem được, kể cả khi lần trước
@@ -116,9 +181,6 @@ thư mục trên Drive, đăng nhập xong tự mở My Drive, phiên đăng nh�
 Link ngay), tiếng Việt, không cần quyền quản trị, cài đè đúng thư mục cũ (không để 2 bản), tự đóng app đang mở; gỡ được
 trong Settings › Apps.
 
-**Dự án:** sắp xếp lại cây thư mục (ghi chú kỹ thuật → `docs\kien_thuc\`, logo gốc + mẫu QR tham khảo →
-`docs\tham_khao\`, nháp cũ → `_luu_tru_tam\`); `CLAUDE.md` nhập chung `AGENTS.md` (hết lệch đường dẫn `src\`).
-
 **Mới: Danh mục TTHC → Kiosk đọc thêm file `.xls` (Excel đời cũ) và `.csv`**
 - `.xls`: Excel lưu bản sao tạm thành `.xlsx` rồi đọc như cũ (không thêm thư viện, file gốc không đổi; cần máy có
   Microsoft Excel).
@@ -128,7 +190,7 @@ trong Settings › Apps.
 
 **Mới: Tải kết quả lên Google Drive + link chia sẻ công khai** (Word → Hyperlink › Bước 02, dòng "Tải lên Google
 Drive")
-- Viết lại bằng Google Drive API v3 chính thức, chỉ thư viện chuẩn (`src/ggdrive.py`) — bỏ Selenium /
+- Viết lại bằng Google Drive API v3 chính thức, chỉ thư viện chuẩn — bỏ Selenium /
   webdriver-manager / chromedriver tải từ mạng, không cần Chrome, EXE không nặng thêm.
 - Đăng nhập Google qua trình duyệt (PKCE, dùng chung client của đăng nhập bản quyền), quyền `drive.file`: app chỉ thấy
   file do chính nó tải lên. Phiên đăng nhập lưu `%APPDATA%\AutoLink\google_drive.json`, mã hoá DPAPI theo tài khoản
@@ -138,16 +200,13 @@ Drive")
   lớn không nạp hết vào RAM), mã hết hạn giữa lượt tự làm mới; lỗi báo rõ (chưa bật Drive API, hết dung lượng, tổ chức
   chặn chia sẻ công khai…).
 - Sửa: chọn "chỉ Word" / Ảnh → PDF trước đây bỏ qua bước tải Drive; file link ghi chữ `\n` thay vì xuống dòng.
-- Chủ sản phẩm cần bật Google Drive API + quyền `drive.file` + Publish app (xem Sổ tay quản trị mục 5).
 
 **Sửa lỗi**
 - Thiếu trạng thái `scan_qr` trong bộ theo dõi tác vụ nền (có thể báo `KeyError` khi quét mã QR).
 - Thêm bản dịch tiếng Anh còn thiếu.
 - Mã QR tuỳ chọn màu: màu có kênh trong suốt (`#RRGGBBAA`) trước đây bị bỏ qua âm thầm (mã ra màu đen); tô màu
   không còn dùng `Image.getdata` (Pillow 14 gỡ bỏ, 10/2027).
-- Dọn lỗi tiềm ẩn: đọc CSV luôn có nội dung dù mọi mã hoá đều sai, `except:` trần, closure dùng biến vòng lặp, file
-  khoá của công cụ quản trị không được đóng.
-- IDE (Pyrefly) báo "Cannot find module auto_link / banquyen…" từ khi chuyển mã vào `src/`: thêm `pyrefly.toml`.
+- Dọn lỗi tiềm ẩn: đọc CSV luôn có nội dung dù mọi mã hoá đều sai, `except:` trần, closure dùng biến vòng lặp.
 
 ## 8.0.1 — 02/10/2026
 **Mới: Danh mục TTHC (Excel) → mã QR + trang tra cứu cho máy kiosk cảm ứng** (trang Link → Mã QR, nút "Danh mục TTHC
@@ -171,23 +230,6 @@ Drive")
 - **Hộp "Chọn link vừa cào":** dòng tiêu đề dài tự xuống dòng trên màn nhỏ phóng chữ to (trước đây bị cắt chữ).
 - **Kiểm tra tự động trên GitHub (CI) chạy được trọn vẹn:** sửa lỗi bảng mã khi in ra màn hình (máy CI dùng cp1252),
   test PowerPoint tự bỏ qua khi máy không có Office; lint thêm `banquyen.py`, `ngonngu.py`.
-- **Quản trị:** công cụ quản trị có lệnh `--cap` (cấp với số ngày tuỳ chọn: gia hạn sớm, chuyển máy, tặng ngày) và
-  `--thu-hoi` (thu hồi chỉ bằng Gmail + mã máy); tab Cấu hình cửa hàng điền đúng cấu hình đang chạy (đăng lại không vô
-  tình đổi giá / tắt đăng nhập Google). Sổ tay quản trị `docs/SO_TAY_QUAN_TRI.md`; script đóng gói phát hành
-  `scripts/dong_goi_phat_hanh.py`. Bảng Sổ đã cấp chia cột theo nội dung, cửa sổ công cụ to theo DPI màn hình.
-- **Công cụ quản trị "kích hoạt từ xa" 1 màn hình** (biểu tượng **Auto Link Quản trị** trên Desktop / Start, tạo bằng
-  `--tao-loi-tat`): dán tin nhắn khách (mã kích hoạt hoặc Gmail + mã máy, nhập tay — không nhận dạng ảnh) → tự điền
-  Gmail / mã máy / gói, hiện nội dung CK + số tiền để đối chiếu sao kê; khách cũ chỉ gửi Gmail hoặc mã máy → tra sổ;
-  gia hạn sớm tự cộng ngày còn lại (đọc giấy phép đang chạy trên GitHub); bắt buộc tích "Đã thấy tiền vào tài khoản";
-  lưu ảnh minh chứng (cột Minh chứng); đăng rồi đọc lại GitHub; chép sẵn tin nhắn trả lời khách. Sổ đã cấp: tìm, lọc
-  sắp hết hạn 7 ngày, bấm đúp để gia hạn / thu hồi. Sổ tay quản trị riêng `Auto_Link_So_tay_quan_tri.docx`.
-- **Công cụ quản trị dạng EXE** (`scripts/dong_goi_quan_tri.py` → `dist\AutoLink_QuanTri.exe`, không chứa khoá): máy mới
-  mở lần đầu chọn `owner_key.txt` từ USB (chỉ nhận đúng khoá chủ sản phẩm), tự tạo biểu tượng Desktop; gọi GitHub CLI
-  không bật cửa sổ đen, máy chưa cài `gh` thì báo cách cài. Ô "Mã bản quyền (key) gửi khách" hiện mã vừa cấp.
-- **Sổ tay Word / PDF có ảnh minh hoạ:** hướng dẫn khách hàng `docs/HUONG_DAN_KHACH_HANG.md` (17 mục) +
-  `scripts/tao_so_tay.py` tạo `Auto_Link_Huong_dan_khach_hang.docx` (gửi khách) và `Auto_Link_So_tay_day_du.docx`
-  (khách hàng + quản trị, nội bộ) kèm PDF, có mục lục, số trang.
-
 ## 8.0.0 — 01/10/2026
 **Đảo tính năng: có mã + tên thủ tục, chọn định dạng báo cáo**
 - Trích xuất link, PDF → Ảnh + link, Mã QR → Link: thêm cột **Mã thủ tục** và **Tên thủ tục / Nội dung** (lấy từ chữ
@@ -208,13 +250,13 @@ nhanh tự mở nhóm có kết quả.
 
 **Bản quyền & thanh toán** (chỉ áp dụng ở bản `Auto_Link.exe`)
 - Đăng nhập Gmail (có thể thêm đăng nhập Google qua trình duyệt — OAuth PKCE — khi chủ sản phẩm cấu hình).
-- Dùng thử **3 ngày / máy**: chống xoá file / sửa tay / lùi đồng hồ (lưu kèm mã kiểm tra + registry).
+- Dùng thử **3 ngày / máy**.
 - **Gói Pro 49.000đ / tháng** (đủ mọi chức năng; gói 12 tháng 490.000đ = giá 10 tháng): mã VietQR có sẵn số tiền + nội
   dung chuyển khoản riêng từng khách → gửi mã kích hoạt + ảnh giao dịch qua Zalo.
 - Hết 3 ngày dùng thử → app hiện thông báo **yêu cầu nâng cấp gói Pro** (lúc mở app, khi bấm bất kỳ chức năng nào, và tự
   hiện nếu app đang mở đúng lúc hết hạn); đang dùng thử thì nhắc trước giá gói Pro. Thư mục tự động tạm dừng khi hết hạn
   (không xử lý miễn phí), có bản quyền là tự chạy lại.
-- Chủ sản phẩm duyệt bằng công cụ quản trị (`admin\autolink_admin.py`, không đóng gói vào EXE) → giấy phép ký số
+- Chủ sản phẩm duyệt → giấy phép ký số
   Ed25519 gắn Gmail + máy, đưa lên GitHub → app **tự kích hoạt** (kiểm tra mỗi 30 phút, mỗi phút khi đang mở trang
   thanh toán); hoặc dán mã bản quyền `AL1.…` để kích hoạt ngay. Thu hồi được; giá, số ngày dùng thử, tài khoản nhận tiền
   đổi được qua cấu hình cửa hàng đã ký (không cần phát hành bản mới).
@@ -351,7 +393,7 @@ bảng 1280×800, 2K, 4K; cửa sổ thu nhỏ, Snap nửa màn hình)
 
 **Nền tảng (đề xuất 6, 12)**
 - Git + CI (GitHub/Gitea Actions chạy lint + test trên Windows), hook pre-commit.
-- Ký mã EXE tự động khi có chứng thư (`scripts/sign.ps1`, PFX hoặc chứng thư trong kho / USB token).
+- Ký mã EXE tự động khi có chứng thư.
 - Module `vanban.py`: lõi văn bản hành chính tách khỏi giao diện.
 - Bỏ fpdf2 (LGPL) cùng fontTools, defusedxml: thư viện Python đóng gói đều dùng giấy phép BSD / MIT / Apache / PSF.
   Ảnh → PDF có link vẽ bằng ReportLab, ảnh JPEG nhúng nguyên bản (ảnh chụp 4 MB → PDF ~4 MB, trước đây 34 MB).
